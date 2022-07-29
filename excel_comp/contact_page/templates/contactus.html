@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+</head>
+<body id="site-wrapper">
+    <header id="header">
+        <div class="logo">
+            <img src="#" alt="logo">
+            <h2 class="name">exc<span>comp</span></h2>
+        </div>
+        <nav class="nav">
+            <ul class="nav-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+            </ul>
+            <ul class="nav-2">
+                <button class="register">Register</button>
+                <button class="login">Log In</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="display-info">
+            <div class="display-left">
+                <h1>Get in Touch</h1>
+                <p>We are here for you! How can we help?</p>
+                <label for="fullname">Full Name <br>
+                    <input type="text" name="fullname" id="fullname" placeholder="Henry Daniel">
+                </label>
+                
+                <label for="email">Email Address
+                    <br><input type="email" name="email" id="email" placeholder="henrydaniel@gmail.com">
+                </label>
+                
+                <label for="message">Type your message <br>
+                    <textarea name="message" id="message" cols="40" rows="5" placeholder="---------------"></textarea>
+                </label>
+                <button type="submit">Submit</button>
+            </div>
+            <div class="display-right">
+                <img src="#" alt="contactus">
+                <p> No. 16 Albert Street, Sabo Yaba, Lagos</p>
+                <p>+234-06-122-022</p>
+                <p>exccomp@info.com</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <p>Get the latest deals and newsletters directly to your inbox.</p>
+            <div class="news"><a href="#">&#128269;</a><input type="email" name="news-email" id="news-email" placeholder="Email Address">
+                <button type="submit">Subscribe</button></div>
+        </div>
+        <div class="site-info">
+            <div class="sec1">
+                <ul><img src="#" alt="logo2"><h2 class="name2">exc<span>comp</span></h2></ul>
+            <ul>
+                <li></li>
+                <a href="#"></a><img src="#" alt="instagram">
+                <li></li>
+                <a href="#"></a><img src="#" alt="facebook">
+                <li></li>
+                <a href="#"></a><img src="#" alt="gmail"></ul>
+            </div>
+            <div class="sec2">
+                <h3>Products</h3>
+                <p>Insights & Actions</p>
+                <p>Integrations</p>
+                <p>Pricing</p>
+                <p></p>
+            </div>
+            <div class="sec3">
+                <h3>Policy</h3>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+                <p>Support Level Policy</p>
+                <p>Service Level Agreement</p>
+            </div>
+            <div class="sec4">
+                <h3>About</h3>
+                <p>About us</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Customers</p>
+            </div>
+            <div class="sec5">
+                <h3>Support</h3>
+                <p>Contact us</p>
+                <p>Help Center</p>
+                <p>Conversational Feedback</p>
+                <p></p>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 2022 Zuri All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Inter';
+    
+}
+a{
+    text-decoration: none;
+}
+#site-wrapper{
+    max-width: 100vw;
+    height: 1520px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    height: 88px;
+    background: #D3EAED;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -10px;
+
+}
+.name{
+
+    color: #2594A3;
+}
+.name span{
+    color: #7E7F83;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .nav-1{
+    width: 77%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-1 li a{
+    color: #2594A3;
+}
+.nav-1 li a:hover{
+    border-bottom: 2px solid;
+}
+.nav-1 li a:active{
+    border-bottom: 2px solid;
+}
+.nav .nav-2{
+    width: 23%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.register{
+    padding: 10px 20px;
+    margin-top: -10px;
+    background-color: #19636D;
+    border: 1px solid #19636D;
+    border-radius: 4px;
+    color: white;
+}
+.register:hover{
+    background-color: unset;
+    color: #19636D;
+}
+.login{
+    padding: 10px 20px;
+    margin-top: -10px;
+    background-color: unset;
+    border: 1px solid #19636D;
+    border-radius: 4px;
+    color: #19636D;
+}
+.login:hover{
+    background-color: #19636D;
+    color: white;
+}
+.display-info{
+    height: 744px;
+    width: 90%;
+    margin: 88px auto;
+    border: 1px solid #49A6B2;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #49A6B2;
+}
+.display-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    padding: 0 5%;
+}
+.display-left input{
+    padding: 2% 5%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    margin-top: 1%;
+}
+.display-left textarea{
+    padding: 2% 5%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    margin-top: 1%;
+}
+.display-left button{
+    padding: 3% 5%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background: #19636D;
+    font-weight: bold;
+    color: white;
+
+}
+.display-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter{
+    height: 113px;
+    margin: 0 auto;
+    background-color: #D3EAED;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #64656A;
+}
+.news{
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.news a{
+    margin-left: 3%;
+
+}
+.news input{
+    padding: 3% 9%;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    font-weight: bold;
+    color: silver;
+
+}
+.news button{
+    padding: 3% 10%;
+    margin-right: 0.5%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background: #19636D;
+    font-weight: bold;
+    color: white;
+
+}
+.site-info{
+    height: 355px;
+    margin: 0 auto;
+    background-color: #19636D;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.sec1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+.sec1 ul{
+    display: flex;
+}
+.name2{
+    color: #92C9D1;
+}
+.name2 span{
+    color: #FF9636;
+}
+.sec2{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 0px;
+}
+.sec3{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 0px;
+}
+.sec4{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 0px;
+}
+.sec5{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5% 0px;
+}
+.footer{
+    height: 56px;
+    color: #19636D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
