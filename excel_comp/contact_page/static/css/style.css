@@ -26,18 +26,18 @@ a{
     align-items: center;
 
 }
-.logo{
+.logo-name{
     width: 20%;
     display: flex;
     justify-content: space-evenly;
     margin-top: -10px;
 
 }
-.name{
+.site-name{
 
     color: #2594A3;
 }
-.name span{
+.site-name span{
     color: #7E7F83;
 }
 .nav{
@@ -45,26 +45,26 @@ a{
     display: flex;
     justify-content: space-between;
 }
-.nav .nav-1{
+.nav .nav-part-1{
     width: 77%;
     display: flex;
     justify-content: space-evenly;
 }
-.nav-1 li a{
+.nav-part-1 li a{
     color: #2594A3;
 }
-.nav-1 li a:hover{
+.nav-part-1 li a:hover{
     border-bottom: 2px solid;
 }
-.nav-1 li a:active{
+.nav-part-1 li a:active{
     border-bottom: 2px solid;
 }
-.nav .nav-2{
+.nav .nav-part-2{
     width: 23%;
     display: flex;
     justify-content: space-evenly;
 }
-.register{
+.register-button{
     padding: 10px 20px;
     margin-top: -10px;
     background-color: #19636D;
@@ -72,11 +72,11 @@ a{
     border-radius: 4px;
     color: white;
 }
-.register:hover{
+.register-button:hover{
     background-color: unset;
     color: #19636D;
 }
-.login{
+.login-button{
     padding: 10px 20px;
     margin-top: -10px;
     background-color: unset;
@@ -84,14 +84,20 @@ a{
     border-radius: 4px;
     color: #19636D;
 }
-.login:hover{
+.login-button:hover{
     background-color: #19636D;
     color: white;
 }
-.display-info{
+.all-display{
     height: 744px;
     width: 90%;
     margin: 88px auto;
+    /* background-color: black; */
+    display: flex;
+}
+.display-info{
+    height: 744px;
+    width: 95%;
     border: 1px solid #49A6B2;
     display: flex;
     border-radius: 15px;
@@ -132,6 +138,30 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.extract{
+    height: 250px;
+    width: 6%;
+    background-color: #19636D;
+    border-radius: 0px 0px 50px 0px;
+    align-self: flex-end;
+    margin-bottom: 5%;
+}
+.extract ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-media-images-fb{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.social-media-images{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
 }
 .newsletter{
     height: 113px;
@@ -199,6 +229,23 @@ a{
 }
 .name2 span{
     color: #FF9636;
+}
+.sec1 ul li{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px dashed white;
+    margin-right: 10px;
+}
+.info-images{
+    margin: 25%;
+    width: 30px;
+    height: 30px;
+}
+.info-images-fb{
+    margin: 15%;
+    width: 40px;
+    height: 40px;
 }
 .sec2{
     width: 10%;
