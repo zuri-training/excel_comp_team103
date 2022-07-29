@@ -88,14 +88,13 @@ a{
     background-color: #19636D;
     color: white;
 }
-.all-display{
+.main-section{
     height: 744px;
     width: 90%;
     margin: 88px auto;
-    /* background-color: black; */
     display: flex;
 }
-.display-info{
+.addressee-addresser-info{
     height: 744px;
     width: 95%;
     border: 1px solid #49A6B2;
@@ -103,7 +102,7 @@ a{
     border-radius: 15px;
     box-shadow: 1px 1px 1px #49A6B2;
 }
-.display-left{
+.addressee-info{
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -111,19 +110,19 @@ a{
     align-items: left;
     padding: 0 5%;
 }
-.display-left input{
+.addressee-info input{
     padding: 2% 5%;
     border: 1px solid silver;
     border-radius: 4px;
     margin-top: 1%;
 }
-.display-left textarea{
+.addressee-info textarea{
     padding: 2% 5%;
     border: 1px solid silver;
     border-radius: 4px;
     margin-top: 1%;
 }
-.display-left button{
+.addressee-info button{
     padding: 3% 5%;
     border: 1px solid silver;
     border-radius: 4px;
@@ -132,14 +131,14 @@ a{
     color: white;
 
 }
-.display-right{
+.addresser-info{
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.extract{
+.social-media-side-bar{
     height: 250px;
     width: 6%;
     background-color: #19636D;
@@ -147,7 +146,7 @@ a{
     align-self: flex-end;
     margin-bottom: 5%;
 }
-.extract ul{
+.social-media-side-bar ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -163,7 +162,7 @@ a{
     height: 30px;
     margin: 10px;
 }
-.newsletter{
+.newsletter-section{
     height: 113px;
     margin: 0 auto;
     background-color: #D3EAED;
@@ -172,7 +171,7 @@ a{
     align-items: center;
     color: #64656A;
 }
-.news{
+.news-form-area{
     width: 40%;
     height: 50%;
     background-color: white;
@@ -183,11 +182,11 @@ a{
 
 }
 
-.news a{
+.news-form-area a{
     margin-left: 3%;
 
 }
-.news input{
+.news-form-area input{
     padding: 3% 9%;
     border: none;
     border-radius: 4px;
@@ -196,7 +195,7 @@ a{
     color: silver;
 
 }
-.news button{
+.news-form-area button{
     padding: 3% 10%;
     margin-right: 0.5%;
     border: 1px solid silver;
@@ -206,7 +205,7 @@ a{
     color: white;
 
 }
-.site-info{
+.site-info-section{
     height: 355px;
     margin: 0 auto;
     background-color: #19636D;
@@ -215,13 +214,13 @@ a{
     color: white;
 }
 
-.sec1{
+.site-info-section-1{
     width: 30%;
     display: flex;
     flex-direction: column;
     margin: 5% 0;
 }
-.sec1 ul{
+.site-info-section-1 ul{
     display: flex;
 }
 .name2{
@@ -230,7 +229,7 @@ a{
 .name2 span{
     color: #FF9636;
 }
-.sec1 ul li{
+.site-info-section-1 ul li{
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -247,28 +246,28 @@ a{
     width: 40px;
     height: 40px;
 }
-.sec2{
+.site-info-section-2{
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
-.sec3{
+.site-info-section-3{
     width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
-.sec4{
+.site-info-section-4{
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
-.sec5{
+.site-info-section-5{
     width: 15%;
     display: flex;
     flex-direction: column;
