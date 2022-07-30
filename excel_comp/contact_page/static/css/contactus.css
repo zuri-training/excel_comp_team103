@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Inter';
+    font-family: 'Lato', sans-serif;
     
 }
 a{
@@ -138,6 +138,13 @@ a{
     justify-content: center;
     align-items: center;
 }
+.addresser-info p{
+    margin-top: 5%;
+}
+.contactus-img{
+    width: 20px;
+    height: 20px;
+}
 .social-media-side-bar{
     height: 250px;
     width: 6%;
@@ -221,13 +228,8 @@ a{
     margin: 5% 0;
 }
 .site-info-section-1 ul{
+    margin-top: 5%;
     display: flex;
-}
-.name2{
-    color: #92C9D1;
-}
-.name2 span{
-    color: #FF9636;
 }
 .site-info-section-1 ul li{
     width: 60px;

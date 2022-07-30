@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     {% load static %}
-    <link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/contactus.css' %} ">
     <img src="{% static 'images/'%} " alt="">
 </head>
 <body id="site-wrapper">
     <header id="header">
         <div class="logo-name">
-            <img src="#" alt="logo">
-            <h2 class="site-name">exc<span>comp</span></h2>
+            <a href="index.html"><img src="{% static 'images/logo1.png'%}" alt="logo"></a>
         </div>
         <nav class="nav">
             <ul class="nav-part-1">
@@ -53,10 +52,10 @@
                 <button type="submit">Submit</button>
             </div>
             <div class="addresser-info">
-                <img src="#" alt="contactus">
-                <p> No. 16 Albert Street, Sabo Yaba, Lagos</p>
-                <p>+234-06-122-022</p>
-                <p>exccomp@info.com</p>
+                <img src="{% static 'images/contact-us.png' %}" alt="contactus">
+                <p> <img src="{% static 'images/location.png' %}" alt="location" class="contactus-img"> No. 16 Albert Street, Sabo Yaba, Lagos</p>
+                <p> <img src="{% static 'images/phone.png' %}" alt="phone" class="contactus-img"> +234-06-122-022</p>
+                <p> <img src="{% static 'images/message.png' %}" alt="info" class="contactus-img"> exccomp@info.com</p>
             </div>
         </div>
             <div class="social-media-side-bar"> <ul>
@@ -73,7 +72,7 @@
         </div>
         <div class="site-info-section">
             <div class="site-info-section-1">
-                <ul><img src="#" alt="logo2"><h2 class="name2">exc<span>comp</span></h2></ul>
+                <ul><img src="{% static 'images/logo-footer.png'%}" alt="logo2"></ul>
             <ul>
                 <li>
                 <a href="#"><img src="{% static 'images/instagram.png' %}" alt="instagram" class="info-images"></a></li>
