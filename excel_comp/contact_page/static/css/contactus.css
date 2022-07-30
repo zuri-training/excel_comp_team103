@@ -6,9 +6,12 @@
     font-family: 'Lato', sans-serif;
     
 }
+/* removing the default href decoration */
 a{
     text-decoration: none;
 }
+
+/* style for the site-wrapper/webpage container */
 #site-wrapper{
     max-width: 100vw;
     height: 1520px;
@@ -17,6 +20,8 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+/* style for the header tag: logo, nav and sign up, login buttons*/
 #header{
     height: 88px;
     background: #D3EAED;
@@ -32,13 +37,6 @@ a{
     justify-content: space-evenly;
     margin-top: -10px;
 
-}
-.site-name{
-
-    color: #2594A3;
-}
-.site-name span{
-    color: #7E7F83;
 }
 .nav{
     width: 70%;
@@ -88,12 +86,16 @@ a{
     background-color: #19636D;
     color: white;
 }
+
+/* style for the main section */
 .main-section{
     height: 744px;
     width: 90%;
     margin: 88px auto;
     display: flex;
 }
+
+/* style for the box for input fields, messages and company message info */
 .addressee-addresser-info{
     height: 744px;
     width: 95%;
@@ -145,6 +147,8 @@ a{
     width: 20px;
     height: 20px;
 }
+
+/* style for the socail media handles of the company */
 .social-media-side-bar{
     height: 250px;
     width: 6%;
@@ -169,6 +173,8 @@ a{
     height: 30px;
     margin: 10px;
 }
+
+/* style for the newsletter-subscription section */
 .newsletter-section{
     height: 113px;
     margin: 0 auto;
@@ -212,6 +218,8 @@ a{
     color: white;
 
 }
+
+/* style for the main-footer of the webpage that displays contact info/connections of the comapany in details */
 .site-info-section{
     height: 355px;
     margin: 0 auto;
@@ -276,6 +284,8 @@ a{
     justify-content: space-around;
     margin: 5% 0px;
 }
+
+/* style for the copyright builder of the site */
 .footer{
     height: 56px;
     color: #19636D;
