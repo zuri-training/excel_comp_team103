@@ -12,7 +12,7 @@ exccomp
 
 ## Logo
 
-![This is a alt text.](/image/sample.png "This is a sample image.")
+![exccomp logo](./excel_comp/homepage/static/images/logo1.png "Unique exccomp logo.")
 
 ## Goal
 
