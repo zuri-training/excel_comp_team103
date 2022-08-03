@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;}
+
+:root {
+    --header-bg: #D3EAED;
+    --primary-40: #49A6B2;
+    --primary-50: #2594A3;
+    --primary-60: #19636D;
+    --secondary-50: #E8E7CD;
+    --white: #fff;
+    --greys-20: #E0E0E1;
+    --greys-50: #64656A;
+    --copy: #F9F9F3;
+}
+
+/* Header Styles and Button */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--header-bg);
+    padding: 16px 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: unset;
+}
+
+header li a {
+    color: var(--primary-50);
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+}
+
+.filled-bg-btn {
+    background-color: var(--primary-50);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.outlined-btn {
+    border: 1px solid var(--primary-50);
+    background-color: var(--header-bg);
+    color: var(--primary-50);
+    padding: 9px 20px;
+    border-radius: 4px;
+}
+
+
+/* Main Content */
+
+/* Testimonial style */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--header-bg);
+    border: 1px solid var(--primary-50);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: var(--primary-50);
+  }
+
+/* Footer styles */
+.subscribe {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--header-bg);
+    padding: 24px;
+}
+
+.subscribe p {
+    color: var(--greys-50);
+}
+
+.footer-main {
+    display: flex;
+    background-color: var(--primary-60);
+    color: var(--greys-20);
+    padding: 64px 0;
+    justify-content: space-around;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-flex {
+    display: flex;
+    gap: 64px;
+}
+
+.footer-flex h4 {padding-bottom: 20px;}
+
+.footer-flex li {
+    list-style: none;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: var(--copy);
+    color: var(--primary-40);
+    padding: 16px 0;
+}
