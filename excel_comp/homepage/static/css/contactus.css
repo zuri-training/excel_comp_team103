@@ -15,7 +15,7 @@ a{
 #site-wrapper{
     max-width: 100vw;
     height: 1520px;
-    background-color: white;
+    background-color: #F9F9F3;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -89,52 +89,63 @@ a{
 
 /* style for the main section */
 .main-section{
-    height: 744px;
+    height: 920px;
     width: 90%;
-    margin: 88px auto;
+    margin: 0 auto;
+    background: url(bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* style for the box for input fields, messages and company message info */
 .addressee-addresser-info{
     height: 744px;
-    width: 95%;
+    width: 90%;
     border: 1px solid #49A6B2;
     display: flex;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px #49A6B2;
+    box-shadow: 2px 2px 2px #49A6B2;
+    background-color: white;
 }
 .addressee-info{
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
-    padding: 0 5%;
+    padding: 5% 1%;
+    margin-left: 5%;
 }
 .addressee-info input{
-    padding: 2% 5%;
+    padding: 2% 3%;
+    width: 90%;
     border: 1px solid silver;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-top: 1%;
 }
 .addressee-info textarea{
-    padding: 2% 5%;
+    padding: 2% 3%;
+    width: 90%;
     border: 1px solid silver;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-top: 1%;
 }
 .addressee-info button{
-    padding: 3% 5%;
+    padding: 3% 0;
+    width: 90%;
     border: 1px solid silver;
-    border-radius: 4px;
+    border-radius: 6px;
     background: #19636D;
     font-weight: bold;
     color: white;
 
 }
 .addresser-info{
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,20 +153,29 @@ a{
 }
 .addresser-info p{
     margin-top: 5%;
+    font-size: 20px;
 }
-.contactus-img{
+.contactus-img-loc{
+    width: 15px;
+    height: 15px;
+}
+.contactus-img-phone{
     width: 20px;
-    height: 20px;
+    height: 18px;
+}
+.contactus-img-msg{
+    width: 20px;
+    height: 12px;
 }
 
 /* style for the socail media handles of the company */
 .social-media-side-bar{
-    height: 250px;
-    width: 6%;
+    height: 150px;
+    width: 3%;
     background-color: #19636D;
     border-radius: 0px 0px 50px 0px;
     align-self: flex-end;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
 }
 .social-media-side-bar ul{
     display: flex;
@@ -164,14 +184,14 @@ a{
     align-items: center;
 }
 .social-media-images-fb{
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 25px;
+    height: 25px;
+    margin: 7px;
 }
 .social-media-images{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+    width: 15px;
+    height: 15px;
+    margin: 7px;
 }
 
 /* style for the newsletter-subscription section */
@@ -185,7 +205,7 @@ a{
     color: #64656A;
 }
 .news-form-area{
-    width: 40%;
+    width: 45%;
     height: 50%;
     background-color: white;
     border-radius: 4px;
@@ -195,12 +215,19 @@ a{
 
 }
 
-.news-form-area a{
-    margin-left: 3%;
+.search-input{
+    margin-left: 2%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.search-input a{
+    margin-right: 5%;
 
 }
-.news-form-area input{
-    padding: 3% 9%;
+.search-input input{
+    padding: 3% 2%;
+    width: 80%;
     border: none;
     border-radius: 4px;
     background: white;
@@ -209,7 +236,8 @@ a{
 
 }
 .news-form-area button{
-    padding: 3% 10%;
+    width: 30%;
+    height: 90%;
     margin-right: 0.5%;
     border: 1px solid silver;
     border-radius: 4px;
@@ -228,9 +256,22 @@ a{
     justify-content: space-evenly;
     color: white;
 }
+.site-info-section .first-section{
+    height: 100%;
+    width: 30%;
+    margin-top: 2%;
+    background-color: #19636D;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.site-info-section p{
+    font-size: smaller;
+}
 
 .site-info-section-1{
-    width: 30%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 5% 0;
@@ -240,45 +281,54 @@ a{
     display: flex;
 }
 .site-info-section-1 ul li{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     border: 1px dashed white;
     margin-right: 10px;
 }
 .info-images{
-    margin: 25%;
-    width: 30px;
-    height: 30px;
+    margin: 20%;
+    width: 15px;
+    height: 15px;
 }
 .info-images-fb{
-    margin: 15%;
-    width: 40px;
-    height: 40px;
+    margin: 5%;
+    width: 25px;
+    height: 25px;
+}
+.site-info-section .second-section{
+    height: 100%;
+    width: 50%;
+    margin-top: 1%;
+    background-color: #19636D;
+    display: flex;
+    justify-content: space-around;
+    color: white;
 }
 .site-info-section-2{
-    width: 10%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
 .site-info-section-3{
-    width: 15%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
 .site-info-section-4{
-    width: 10%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5% 0px;
 }
 .site-info-section-5{
-    width: 15%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -292,4 +342,5 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F9F9F3;
 }
