@@ -7,7 +7,6 @@
 :root {
     --header-bg: #D3EAED;
     --primary-40: #49A6B2;
-    --primary-50: var(--primary-60);
     --primary-60: #19636D;
     --secondary-50: #E8E7CD;
     --white: #fff;
