@@ -9,13 +9,13 @@
 img{
     width: 100%;
 }
-    
+
 .pic{
     height: 410px;
     left: 201px;
     top: 307px;
-} 
-    
+}
+
 
 /***********************************Media queries******************************************/
 @media screen and (min-width: 1024px) {
@@ -49,11 +49,11 @@ header {
     opacity: 0.5;
     border: 0.5px solid #FFFFFF;
 }
-    
+
 .logo {
     cursor: pointer;
 }
-    
+
 .nav__links a,
 .overlay__content a {
     font-weight: 500;
@@ -63,26 +63,26 @@ header {
 
 .cta{
     font-weight: 500;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 .nav__links {
     list-style: none;
     display: flex;
 }
-    
+
 .nav__links li {
     padding: 0px 20px;
 }
-    
+
 .nav__links li a {
     transition: color 0.3s ease 0s;
 }
-    
+
 .nav__links li a:hover {
     color: #0088a9;
 }
-    
+
 .cta {
     padding: 9px 25px;
     border: none;
@@ -93,17 +93,17 @@ header {
     filter: drop-shadow(0px 4px 8px rgba(25, 75, 109, 0.2));
     border-radius: 4px;
 }
-    
+
 .cta:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
-    
+
 /***********************Mobile Nav********************************/
-    
+
 .menu {
     display: none;
 }
-    
+
 .overlay {
     height: 100%;
     width: 0;
@@ -122,11 +122,11 @@ header {
     background-color: black;
     margin: 6px 0;
 }
-    
+
 .overlay--active {
     width: 100%;
 }
-    
+
 .overlay__content {
     display: flex;
     height: 100%;
@@ -134,14 +134,14 @@ header {
     align-items: center;
     justify-content: center;
 }
-    
+
 .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
 }
-    
+
 .overlay a:hover,
 .overlay a:focus {
     color: #0088a9;
@@ -155,20 +155,20 @@ header {
     color: #edf0f1;
     cursor: pointer;
 }
-    
+
 @media screen and (max-height: 450px) {
     .overlay a {
     font-size: 20px;
     }
-    
+
     .overlay .close {
     font-size: 40px;
     top: 15px;
     right: 35px;
-    cursor: pointer; 
+    cursor: pointer;
     }
 }
-    
+
 @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
@@ -179,7 +179,7 @@ header {
     display: initial;
     }
 }
-    
+
 
 
 /* login and register switch*/
@@ -279,7 +279,7 @@ body {
     margin: 30px;
     padding:25px;
 }
-    
+
 .FlexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -305,15 +305,15 @@ body {
     padding: 1rem;
 }
 
-/*******************Registration form************************/   
+/*******************Registration form************************/
 #regform{
     background: #FFFFFF;
     border: 0.5px solid #2594A3;
     box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
-           
-#password {  
+
+#password {
     background-image: url("https://img.icons8.com/material-sharp/20/000000/visible.png");
     background-position: 97% center;
     background-repeat: no-repeat;
@@ -338,7 +338,7 @@ body {
 
 .registerbtn {
     background: #2594A3;
-    border-radius: 6px;  
+    border-radius: 6px;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
