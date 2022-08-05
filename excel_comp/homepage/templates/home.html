@@ -21,15 +21,15 @@
         <img src="{% static '/images/logo1.png' %}" alt="logo" class="logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Help & Support</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
         </nav>
         <div>
-            <button><a href="" class="filled-bg-btn">Register</a></button>
-            <button><a href="" class="outlined-btn">Log in</a></button>
+            <button><a href="{% url 'accounts:register' %}" class="filled-bg-btn">Register</a></button>
+            <button><a href="{% url 'accounts:login' %}" class="outlined-btn">Log in</a></button>
         </div>
     </header>
 
