@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.header{
+    background-color: #D3EAED;
+    height: 70px;
+}
+.logo {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    mix-blend-mode: darken;
+}
+.log{
+    width: 20px;
+        height: 20px;
+    mix-blend-mode: luminosity;
+    background-color: transparent;
+                
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-contain{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2594a3;
+    
+}
+.logo-nam{
+    color: #D3EAED;
+    font-size: 18px;
+}
+.logo-col {
+    color: black;
+    font-weight: 1000;
+}
+.logo-colo{
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}
+.link-container{
+    display:none;
+}
+.password-box {
+    position: relative;
+}
+.login-btn {
+    background-color: #2594A3;
+    margin: 0 7px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 12px 0;
+    width: 100px;
+}
+.login-btn:hover{
+    background-color: #2594a3aa;
+    transition: .4s linear;
+}
+.register-btn{
+    display: none;
+}
+.register-btn:hover{
+    background-color: #2594A3;
+    color: white;
+    transition: .4s linear;
+}
+.bars{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    margin-left: 30px;
+    color: rgba(0, 0, 0, 0.79);
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    background-color: #2594A3;
+    color: white;
+    width: 50%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: grid;
+        font-size: 25px;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 1em;
+        box-shadow: 3px 3px 3px white;
+        transition: 1s ease-in;
+        transform: translate(-100%);
+        padding: auto;
+}
+.show-link{
+    transform: translate(0);
+    opacity: 1.0 !important;
+}
+.link a:hover{
+    color: white;
+}
+.blur{
+    opacity: 1.0;
+}
+
+.toggle{
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    float: right;
+    font-size: 30px;
+}
+.toggle:hover{
+    color: black;
+    transition: .4s linear;
+}
+.linkss{
+    margin: 0;
+}
+.links a:hover{
+color: black;
+transition: .4s linear;
+}
+.password-box i {
+    color: #64656A;
+    position: absolute;
+    bottom: 17px;
+
+    font-size: 15px;
+    right: 10px;
+}
+.links{
+    list-style: none;
+    padding: 30px 10px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.homee{
+    font-weight: 800;
+
+}
+.nav-button{
+    display: flex;
+}
+main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'lato', 'sans-serif';
+}
+.login-image img{
+    width: 40%;
+    margin: auto;
+
+}
+.login-image{
+    display: none;
+}
+h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.login-content, .email-box, .password-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.email, .passwd{
+padding: 8px 0;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #64656A;
+}
+.submit-btn{
+    background-color: #2594A3;
+    color: white;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 30px 0;
+}
+.submit-btn:hover{
+    background-color: #2594a3b6;
+    transition: .4s linear;
+}
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+padding: 0 15px;
+}
+.checked{
+    display: flex;
+}
+input{
+    padding: 10px 0;
+    color: #ABABAB;
+    border-radius: 5px;
+    outline: none;
+    border-width: 1px;
+}
+
+.login-contain{
+    border: 1px solid #2594A3;
+    width: 60%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.login-content{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+   
+}
+.buttons{
+    background-color: #D3EAED;
+    height: 30px;
+    margin: 20px 0;
+}
+.login-button, .register-button{
+    background-color: #2594A3;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 50%;
+    padding: 6px 0;
+    color: white;
+}
+.login-button:hover{
+    transition: .4s linear;
+    background-color: #2594a3cd;
+}
+.register-button{
+    background-color: transparent;
+    color: #2594A3;
+    width: 40%;
+}
+@media only screen and (min-width: 800px) {
+.main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+        margin: auto;
+        font-size: 16px;
+        font-family: 'lato', 'sans-serif';
+    }
+
+.login-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.link-container {
+    display: flex;
+}
+
+.link {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6%;
+    font-weight: 300;
+}
+
+.home {
+    font-weight: 700;
+}
+
+
+
+
+.link a {
+    text-decoration: none;
+    color: #2594A3;
+}
+
+.nav-button {
+    display: flex;
+}
+
+.logo {
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    mix-blend-mode: darken;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2594A3;
+}
+
+.logo-col {
+    color: #434347;
+    font-weight: 800;
+}
+
+.bars{
+    display: none;
+}
+
+.nav-button {
+    outline: none;
+
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+}
+.register-btn {
+    background-color: transparent;
+    border-color: #2594A3;
+    margin: 0 8px;
+    outline: none;
+    padding: 12px 0;
+    width: 100px;
+    border-width: 1px;
+    color: #2594A3;
+    border-radius: 4px;
+    display: block;
+}
+.nav{
+    display: none;
+}
+}
