@@ -1,6 +1,7 @@
 from django.urls import path
-from homepage import views
+from . import views
 
+app_name = 'homepage'
 urlpatterns = [
     path('', views.homepage, name='homepage'),
 ]

@@ -23,11 +23,11 @@
             <a class="logo" href="/"><img src="{% static '/images/logo1.png' %}" alt="logo"></a>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Help & Support</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{% url 'contact_page:contact_us' %}">Contact</a></li>
                 </ul>
             </nav>
             <div>
@@ -58,8 +58,8 @@
                     <label for="switchRegister"><a href="#register" style="text-decoration: none; ">Register</a></label>
                     <div class="switch-wrapper">
                     <div class="switch">
-                        <div><a href="#login" style="text-decoration: none; color: #FFFFFF;" >Log In</a></div>
-                        <div><a href="#register" style="text-decoration: none; color: #FFFFFF;">Register</a></div>
+                        <div><a href="{% url 'accounts:login' %}" style="text-decoration: none; color: #FFFFFF;" >Log In</a></div>
+                        <div><a href="{% url 'accounts:register' %}" style="text-decoration: none; color: #FFFFFF;">Register</a></div>
                     </div>
                     </div>
                 </div>
