@@ -20,11 +20,13 @@
     </head>
     <body>
         <header>
-            <a class="logo" href="/"><img src="{% static '/images/logo1.png' %}" alt="logo"></a>
+            <a class="logo" href="{% url 'homepage:homepage' %}">
+                <img src="{% static '/images/Logo2.svg' %}" alt="logo">
+            </a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="{% url 'about_us:about' %}">About Us</a></li>
                     <li><a href="#">Help & Support</a></li>
                     <li><a href="{% url 'contact_page:contact_us' %}">Contact</a></li>
                 </ul>
@@ -37,16 +39,16 @@
         <div class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
+                <a href="{% url 'homepage:homepage' %}">Home</a>
+                <a href="{% url 'about_us:about' %}">About Us</a>
                 <a href="#help">Help & Support</a>
-                <a href="#contact">Contact Us</a>
+                <a href="{% url 'contact_page:contact_us' %}">Contact Us</a>
             </div>
         </div>
         <div class="parent"></div>
         <section class='FlexContainer'>
             <div class="element" class="pic">
-                <img class="regpic" src="register-illustration.png" alt="">
+                <img class="regpic" src="{% static '/images/fingerprint.svg' %}" alt="">
             </div>
             <div class="element" id="regform">
                 <h1 style="text-align:center;">Create an account</h1><br>
