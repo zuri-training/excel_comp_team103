@@ -244,16 +244,59 @@ section button{
   }
 
 /* Footer styles */
-.subscribe {
+/* style for the newsletter-subscription section */
+.newsletter-section{
+    height: 113px;
+    margin: 0 auto;
+    background-color: #D3EAED;
     display: flex;
-    justify-content: space-around;
-    background-color: var(--header-bg);
-    padding: 24px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #64656A;
+}
+.news-form-area{
+    width: 45%;
+    height: 50%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.subscribe p {
-    color: var(--greys-50);
+.search-input{
+    margin-left: 2%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
+.search-input a{
+    margin-right: 5%;
+
+}
+.search-input input{
+    padding: 3% 2%;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    font-weight: bold;
+    color: silver;
+
+}
+.news-form-area button{
+    width: 30%;
+    height: 90%;
+    margin-right: 0.5%;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background: #19636D;
+    font-weight: bold;
+    color: white;
+
+}
+
 
 .footer-main {
     display: flex;

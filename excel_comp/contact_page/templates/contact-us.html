@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    {% load static %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" {% static 'css/contactus.css' %} ">
-    <img src="{% static 'images/'%} " alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/contactus.css' %}">
+        
+        <title>Contact Us | exccomp</title>
+        
 </head>
-<body id="site-wrapper">
+
+<body>
     <header>
         <img src="{% static '/images/logo1.png' %}" alt="logo" class="logo">
         <nav>
             <ul>
                 <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="{% url 'about_us:about' %}">About Us</a></li>
                 <li><a href="">Help & Support</a></li>
                 <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
@@ -29,7 +32,7 @@
             <button><a href="{% url 'accounts:login' %}" class="outlined-btn">Log in</a></button>
         </div>
     </header>
-    <main>
+    <main id="contactus-wrapper">
         <div class="main-section">
             <div class="addressee-addresser-info">
                 <div class="addressee-info">
@@ -50,19 +53,20 @@
                 </div>
                 <div class="addresser-info">
                     <img src="{% static 'images/contact-us.png' %}" alt="contactus">
-                    <p> <span class="fa-solid fa-location-dot"></span> No. 16 Albert Street, Sabo Yaba, Lagos</p>
-                    <p> <span class="fa-solid fa-phone"></span> +234-06-122-022 </p>
-                    <p> <span class="fa-regular fa-envelope"></span>  exccomp@info.com</p>
+                    <p> <i class="fa-solid fa-location-dot"></i> No. 16 Albert Street, Sabo Yaba, Lagos</p>
+                    <p> <i class="fa-solid fa-phone"></i> +234-06-122-022 </p>
+                    <p> <i class="fa-regular fa-envelope"></i>  exccomp@info.com</p>
                 </div>
             </div>
         </div>
-        <div class="newsletter-section">
+    </main>
+    <footer>
+        <section class="newsletter-section">
             <p>Get the latest deals and newsletters directly to your inbox.</p>
-            <div class="news-form-area"><div class="search-input"><a href="#"><span class="fa-solid fa-magnifying-glass"></span></a><input type="email" name="news-email" id="news-email" placeholder="Email Address"></div>
-                <button type="submit">Subscribe </button>
-            </div>
-        </div>
-  
+            <div class="news-form-area"><div class="search-input"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a><input type="email" name="news-email" id="news-email" placeholder="Email Address"></div>
+                <button type="submit">Subscribe</button></div>
+        </section>
+
         <section class="footer-main">
             <div>
                 <img src="{% static '/images/logo-footer.png' %}" alt="logo" class="logo footer-logo">
@@ -120,9 +124,9 @@
             </div>
         </section>
 
-    </main>
-    <footer class="footer-copyright">
-        <p>&copy; 2022 Zuri. All rights reserved.</p>
+        <div class="footer-copyright">
+            <p>&copy; 2022 Zuri. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

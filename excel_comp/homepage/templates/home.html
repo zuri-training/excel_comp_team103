@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="{% url 'about_us:about' %}">About Us</a></li>
                 <li><a href="">Help & Support</a></li>
                 <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
@@ -139,16 +139,10 @@
     </section>
 
     <footer>
-        <section class="subscribe">
-            <p>Get latest deals and newsletters directly to your inbox.</p>
-            <div>
-                <label for="email">
-                    Email
-                    <!-- <i class="fa-regular fa-magnifying-glass"></i> -->
-                    <input type="email" name="email" id="email">
-                </label>
-                <button>Subscribe</button>
-            </div>
+        <section class="newsletter-section">
+            <p>Get the latest deals and newsletters directly to your inbox.</p>
+            <div class="news-form-area"><div class="search-input"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a><input type="email" name="news-email" id="news-email" placeholder="Email Address"></div>
+                <button type="submit">Subscribe</button></div>
         </section>
 
         <section class="footer-main">
