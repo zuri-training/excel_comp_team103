@@ -71,7 +71,7 @@ button {
     height: 100%;
     width: 87%;
     margin: 0 auto;
-    background: url(bg.png);
+    background: url(../images/bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
