@@ -51,9 +51,10 @@ header a {
     color: unset;
 }
 
-header a:hover {
+header nav a:hover {
     padding-bottom: 3px;
     border-bottom: 4px solid var(--primary-50);
+    border-radius: 4px;
 }
 
 header li a {

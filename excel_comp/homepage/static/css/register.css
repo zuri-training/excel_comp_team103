@@ -6,6 +6,22 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+:root {
+    --primary-20: #D3EAED;
+    --primary-40: #49A6B2;
+    --primary-50: #2594A3;
+    --primary-60: #19636D;
+    --secondary-20: #F9F9F3;
+    --secondary-40: #E8E7CD;
+    --secondary-50: #E8E7CD;
+    --sponsor-bg: #EEF6F8;
+    --section-a-bg: #FCFCF9;
+    --white: #fff;
+    --greys-20: #E0E0E1;
+    --greys-30: #B2B2B5;
+    --greys-50: #64656A;
+}
+
 img{
     width: 100%;
 }
