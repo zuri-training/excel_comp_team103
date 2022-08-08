@@ -26,7 +26,6 @@
                     <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Help & Support</a></li>
-                    <li><a href="#">Blog</a></li>
                     <li><a href="{% url 'contact_page:contact_us' %}">Contact</a></li>
                 </ul>
             </nav>
@@ -41,7 +40,6 @@
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#help">Help & Support</a>
-                <a href="#blog">Blog</a>
                 <a href="#contact">Contact Us</a>
             </div>
         </div>
@@ -51,40 +49,30 @@
                 <img class="regpic" src="register-illustration.png" alt="">
             </div>
             <div class="element" id="regform">
-                <div class="switches-container">
-                    <input type="radio" id="switchLogin" name="switchPlan" value="Login" checked="checked" />
-                    <input type="radio" id="switchRegister" name="switchPlan" value="Register" />
-                    <label for="switchLogin"><a href="#login" style="text-decoration: none; " >Log In</a></label>
-                    <label for="switchRegister"><a href="#register" style="text-decoration: none; ">Register</a></label>
-                    <div class="switch-wrapper">
-                    <div class="switch">
-                        <div><a href="{% url 'accounts:login' %}" style="text-decoration: none; color: #FFFFFF;" >Log In</a></div>
-                        <div><a href="{% url 'accounts:register' %}" style="text-decoration: none; color: #FFFFFF;">Register</a></div>
-                    </div>
-                    </div>
-                </div>
-                <h1>Create an account</h1><br>
+                <h1 style="text-align:center;">Create an account</h1><br>
                             <form action="">
                                 <p>
                                     <label for="email">Email address</label><br>
-                                    <input type="email" id="email" name="email"><br><br>
+                                    <input type="email" id="email" name="email" placeholder="henrydaniel@example.com"><br><br>
                                 </p>
+    
                                 <p>
                                     <label for="password">Password</label><br>
-                                    <input type="password" id="password" name="password"/>
-                                    <input type="checkbox" id="toggle-password" />
+                                    <input type="password" id="password" name="password" placeholder="•••••••••••">    
+                                    <input type="checkbox" id="toggle-password">
                                     <label for="toggle-password">Show Password</label>
                                 </p>
                                 <p>
                                     <label for="password">Confirm password</label><br>
-                                    <input type="password" id="password" name="password"/>
-                                    <input type="checkbox" id="toggle-password" />
+                                    <input type="password" id="password" name="password" placeholder="•••••••••••">    
+                                    <input type="checkbox" id="toggle-password">
                                     <label for="toggle-password">Show Password</label>
                                 </p>
+                                <p style="text-align:center;">By registering, you agree to ExcComp's <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a>.</p><br>
                                 <p>
                                     <button type="submit" class="registerbtn">Register</button>
-                                </p>
-                                <p style="text-align:center;">By registering, you agree to ExcComp's <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                                </p><br>                                
+                                <p style="text-align:center;">Already have an account? <a href="#">Log In</a></p>
                             </form>
             </div>
         </section>
