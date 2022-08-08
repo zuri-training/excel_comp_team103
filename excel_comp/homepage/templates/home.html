@@ -18,11 +18,13 @@
 
 <body>
     <header>
-        <img src="{% static '/images/Logo2.svg' %}" alt="logo" class="logo">
+        <a class="logo" href="{% url 'homepage:homepage' %}">
+            <img src="{% static '/images/Logo2.svg' %}"  alt="logo" class="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="{%url 'about_us:about' %}">About Us</a></li>
                 <li><a href="">Help & Support</a></li>
                 <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
