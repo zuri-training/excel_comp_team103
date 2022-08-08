@@ -343,11 +343,11 @@ input[type=email] {
     padding: 10px 150px 10px 3px;
 }
 
-input[type=email]:focus,
+/* input[type=email]:focus,
 input[type=email]:active {
     outline: none;
     border: none;
-}
+} */
 
 
 /* Main footer Styling */

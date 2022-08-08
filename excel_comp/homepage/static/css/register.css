@@ -97,10 +97,7 @@ header {
     text-decoration: none;
 }
 
-.cta{
-    font-weight: 500;
-    text-decoration: none;  
-}
+a {color: unset;}
 
 .nav__links {
     list-style: none;
@@ -120,6 +117,9 @@ header {
 }
     
 .cta {
+    font-weight: 500;
+    text-decoration: none;  
+    color: var(--primary-60);
     padding: 9px 25px;
     border: none;
     cursor: pointer;
@@ -131,6 +131,7 @@ header {
 }
     
 .cta:hover {
+    color: var(--white);
     background-color: rgba(0, 136, 169, 0.8);
 }
     

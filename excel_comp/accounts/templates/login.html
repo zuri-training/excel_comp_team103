@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&family=Inter:wght@100&family=Lato&family=Lexend:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+      rel="stylesheet"/>
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}" />
     <script
       src="https://kit.fontawesome.com/1bf10dbabf.js"
       crossorigin="anonymous"
@@ -20,19 +20,22 @@
       <div class="header">
         <nav class="navbar">
           <div class="logo-container">
-            <img src="./logo.jpg" class="logo" alt="logo" />
+            <img src="{% static '/images/logo.jpg' %}" class="logo" alt="logo" />
             <p class="logo-name">exc<span class="logo-col">comp</span></p>
           </div>
           <ul class="link-container">
-            <li class="link home"><a href="">Home</a></li>
-            <li class="link"><a href="">About Us</a></li>
+            <li class="link home"><a href="{% url 'homepage:homepage' %}">Home</a></li>
+            <li class="link"><a href="{% url 'about_us:about' %}">About Us</a></li>
             <li class="link"><a href="">Help & Support</a></li>
-            <li class="link"><a href="">Blog</a></li>
-            <li class="link"><a href="">Contact Us</a></li>
+            <li class="link"><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
           </ul>
           <div class="nav-button">
             <button class="login-btn">Log in</button>
-            <button class="register-btn">Register</button>
+            <button class="register-btn">
+                <a href="{% url 'accounts:register' %}" style="color: unset; text-decoration: none;">
+                    Register
+                </a>
+            </button>
             <button class="bars"><i class="fa-solid fa-bars"></i></button>
           </div>
         </nav>
@@ -62,7 +65,7 @@
       <main>
         <div class="main">
           <div class="login-image">
-            <img src="./cuate.jpg" alt="image" />
+            <img src="{% static '/images/login.svg' %}" alt="image" />
           </div>
           <div class="login-contain">
             <div class="login-content">

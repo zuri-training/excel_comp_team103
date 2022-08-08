@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             <div>
-                <a class="cta" href="#" i>Log In</a>
+                <a class="cta" href="{% url 'accounts:login' %}">Log In</a>
                 <p class="menu cta">Menu</p>
             </div>
         </header>
@@ -74,7 +74,7 @@
                                 <p>
                                     <button type="submit" class="registerbtn">Register</button>
                                 </p><br>                                
-                                <p style="text-align:center;">Already have an account? <a href="#">Log In</a></p>
+                                <p style="text-align:center;">Already have an account? <a href="{% url 'accounts:login' %}">Log In</a></p>
                             </form>
             </div>
         </section>
