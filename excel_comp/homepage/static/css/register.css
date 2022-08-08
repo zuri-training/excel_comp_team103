@@ -9,19 +9,28 @@
 img{
     width: 100%;
 }
-
+    
 .pic{
+    width: 430px;
     height: 410px;
     left: 201px;
     top: 307px;
 }
 
+    
 
 /***********************************Media queries******************************************/
 @media screen and (min-width: 1024px) {
     html,
     body {
         font-size: 24px;
+    }
+
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
     }
 }
 
@@ -30,12 +39,24 @@ img{
     body {
         font-size: 16px;
     }
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
+    }
 }
 
 @media screen and (max-width: 600px) {
     html,
     body {
         font-size: 12px;
+    }
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
     }
 }
 
@@ -45,44 +66,43 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background: #D3EAED;
-    opacity: 0.5;
-    border: 0.5px solid #FFFFFF;
+    background: var(--header-bg);
 }
-
+    
 .logo {
     cursor: pointer;
 }
-
+    
 .nav__links a,
 .overlay__content a {
-    font-weight: 500;
-    color: #2594A3;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary-50);
     text-decoration: none;
 }
 
 .cta{
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .nav__links {
     list-style: none;
     display: flex;
 }
-
+    
 .nav__links li {
     padding: 0px 20px;
 }
-
+    
 .nav__links li a {
     transition: color 0.3s ease 0s;
 }
-
+    
 .nav__links li a:hover {
     color: #0088a9;
 }
-
+    
 .cta {
     padding: 9px 25px;
     border: none;
@@ -93,17 +113,17 @@ header {
     filter: drop-shadow(0px 4px 8px rgba(25, 75, 109, 0.2));
     border-radius: 4px;
 }
-
+    
 .cta:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
-
+    
 /***********************Mobile Nav********************************/
-
+    
 .menu {
     display: none;
 }
-
+    
 .overlay {
     height: 100%;
     width: 0;
@@ -122,11 +142,11 @@ header {
     background-color: black;
     margin: 6px 0;
 }
-
+    
 .overlay--active {
     width: 100%;
 }
-
+    
 .overlay__content {
     display: flex;
     height: 100%;
@@ -134,14 +154,14 @@ header {
     align-items: center;
     justify-content: center;
 }
-
+    
 .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: color 0.3s ease 0s;
 }
-
+    
 .overlay a:hover,
 .overlay a:focus {
     color: #0088a9;
@@ -155,20 +175,27 @@ header {
     color: #edf0f1;
     cursor: pointer;
 }
-
+    
 @media screen and (max-height: 450px) {
     .overlay a {
     font-size: 20px;
     }
-
+    
     .overlay .close {
     font-size: 40px;
     top: 15px;
     right: 35px;
-    cursor: pointer;
+    cursor: pointer; 
+    }
+
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
     }
 }
-
+    
 @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
@@ -178,93 +205,15 @@ header {
     .menu {
     display: initial;
     }
+
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
+    }
 }
-
-
-
-/* login and register switch*/
-.switches-container {
-    width: auto;
-    position: relative;
-    display: flex;
-    padding: 0;
-    position: relative;
-    background: var(--switches-bg-color);
-    line-height: 1.5rem;
-    border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    border: 1px solid #2594A3;
-}
-
-.switches-container input {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-}
-
-.switches-container label {
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    cursor: pointer;
-    color: var(--switches-label-color);
-    border: #0088a9;
-}
-
-.switch-wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    padding: 0.15rem;
-    z-index: 3;
-    transition: transform .5s cubic-bezier(.77, 0, .175, 1);
-}
-
-.switch {
-    border-radius: 4px;
-    background: var(--switch-bg-color);
-    height: 100%;
-}
-
-.switch div {
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    display: block;
-    color: var(--switch-text-color) ;
-    transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
-    will-change: opacity;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.switches-container input:nth-of-type(1):checked~.switch-wrapper {
-    transform: translateX(0%);
-}
-
-:root {
---switches-bg-color: transparent;
---switches-label-color: #2594A3 ;
---switch-bg-color: #2594A3;
---switch-text-color: white ;
-}
-
-.switches-container input:nth-of-type(2):checked~.switch-wrapper {
-    transform: translateX(100%);
-}
-
-.switches-container input:nth-of-type(1):checked~.switch-wrapper .switch div:nth-of-type(1) {
-    opacity: 1;
-}
-
-.switches-container input:nth-of-type(2):checked~.switch-wrapper .switch div:nth-of-type(2) {
-    opacity: 1;
-}
+    
 /*****main body******/
 body {
     display: grid;
@@ -276,10 +225,11 @@ body {
     height: auto;
     width: clamp(80px, 50%, 300px);
     justify-self: center;
-    margin: 30px;
+    margin: 100px;
     padding:25px;
+    justify-content: space-evenly;
 }
-
+    
 .FlexContainer {
     display: flex;
     flex-wrap: wrap;
@@ -305,22 +255,40 @@ body {
     padding: 1rem;
 }
 
-/*******************Registration form************************/
+/*******************Registration form************************/   
 #regform{
-    background: #FFFFFF;
-    border: 0.5px solid #2594A3;
-    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+    border: 1px solid #92CAD1;
+    box-shadow: 0px 4px 8px rgba(195, 196, 203, 0.4);
     border-radius: 10px;
-}
+    width: 504px;
+    height: 666px;
+    left: 200px;
+    padding-top: 70px;
 
-#password {
-    background-image: url("https://img.icons8.com/material-sharp/20/000000/visible.png");
+}
+form{    
+    justify-content: space-evenly;
+}
+.regpic{
+    width: 150%;
+    max-width: 430px;
+    height: 410px;
+    right: 201px;
+    top: 307px;
+    padding-right: -20px;
+    
+}
+           
+#password {  
+    background-image: url("https://img.icons8.com/material-outlined/20/CCCCCC/invisible.png");
     background-position: 97% center;
     background-repeat: no-repeat;
+
 }
 
 #password.visible {
-    background-image: url("https://img.icons8.com/material-outlined/20/000000/invisible.png");
+    background-image: url("https://img.icons8.com/material-sharp/20/CCCCCC/visible.png");
+
 }
 
 #toggle-password {
@@ -338,7 +306,7 @@ body {
 
 .registerbtn {
     background: #2594A3;
-    border-radius: 6px;
+    border-radius: 6px;  
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -353,13 +321,14 @@ body {
 }
 
 input {
-    padding: 15px;
+    padding: 20px;
     display: inline-block;
     background: #FFFFFF;
     border: 0.6px solid #64656A;
     border-radius: 6px;
     cursor: pointer;
     width: 100%;
+    justify-content: space-evenly;
     opacity: 0.9;
 }
 
