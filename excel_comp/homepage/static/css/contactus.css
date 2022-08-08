@@ -15,21 +15,26 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;}
+
+body{
+    height: 1534px;
+    max-width: 100vw;
 }
 /* Header Styles and Button */
 header {
+    height: 5.7%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--header-bg);
-    padding: 16px 0;
+    /* padding: 16px 0; */
+    /* margin-top: -20px; */
 }
 
 header nav ul {
     display: flex;
     gap: 40px;
-    list-style: none;
 }
 
 header a {
@@ -62,16 +67,16 @@ button {
     border-radius: 4px;
 }
 
-#contactus-wrapper{
-    height: 922px;
-    width: 100%;
-    background-color: var(--copy);
+
+/* style for the main section */
+main{
+    height: 90%;
 }
 .main-section{
-    height: 100%;
+    height: 66%;
     width: 87%;
     margin: 0 auto;
-    background: url(bg.png);
+    background: url(../images/bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -133,23 +138,19 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     gap: 2%;
+    align-items: left;
     margin-left: 5%;
 }
 .addresser-info img{
-    margin-bottom: 5%;
+    height: 45%;
+    margin-bottom: 4%;
+    padding-right: 7%;
 }
-.addresser-info p{
-    color: #2594A3;
-    font-size: 20px;
-    display: flex;
-    gap: 3%;
-}
-/* Footer styles */
+
 /* style for the newsletter-subscription section */
 .newsletter-section{
-    height: 113px;
+    height: 8.1%;
     margin: 0 auto;
     background-color: #D3EAED;
     display: flex;
@@ -192,16 +193,15 @@ button {
     width: 30%;
     height: 90%;
     margin-right: 0.5%;
-    border: 1px solid silver;
+    border: 1px solid #B2B2B5;
     border-radius: 4px;
     background: #19636D;
     font-weight: bold;
     color: white;
-
 }
-
-
+/* style for the main-footer of the webpage that displays contact info/connections of the company in details */
 .footer-main {
+    height: 26%;
     display: flex;
     background-color: var(--primary-60);
     color: var(--greys-20);
@@ -228,7 +228,8 @@ button {
     padding-bottom: 20px;
 }
 
-.footer-copyright {
+/* style for the copyright builder of the site */
+footer{
     text-align: center;
     background-color: var(--copy);
     color: var(--primary-40);

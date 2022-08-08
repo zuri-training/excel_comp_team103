@@ -18,41 +18,39 @@
 
 <body>
     <header>
-        <img src="{% static '/images/logo1.png' %}" alt="logo" class="logo">
+        <img src="{% static '/images/Logo2.svg' %}" alt="logo" class="logo">
         <nav>
             <ul>
                 <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
-                <li><a href="{% url 'about_us:about' %}">About Us</a></li>
+                <li><a href="">About Us</a></li>
                 <li><a href="">Help & Support</a></li>
                 <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
         </nav>
         <div>
-            <button><a href="{% url 'accounts:register' %}" class="filled-bg-btn">Register</a></button>
-            <button><a href="{% url 'accounts:login' %}" class="outlined-btn">Log in</a></button>
+            <button class="filled-bg-btn"><a href="{% url 'accounts:register' %}">Register</a></button>
+            <button class="outlined-btn"><a href="{% url 'accounts:login' %}">Log in</a></button>
         </div>
     </header>
 
     <main>
-        <div>
-            <h1>A Better & faster way
-                to use your spreadsheet.
-            </h1>
-            <p>“Errors using inadequate data are much less than those using no data at all.” — Charles Babbage</p>
+        <div class="hero-text">
+            <h1 class="hero-title">A Better & faster way to use your spreadsheet.</h1>
+            <p class="hero-par">“Errors using inadequate data are much less than those using no data at all.” — Charles Babbage</p>
             <button>Get Started</button>
         </div>
 
         <div>
-            <img src="{% static '/images/hero-image.png' %}" alt="layered excel workbook">
+            <img src="{% static '/images/hero-image.svg' %}" alt="layered excel workbook" class="hero-img">
         </div>
     </main>
 
     <section id="sponsors">
-        <img src="{% static '/images/Flutterwave.png' %}" alt="Flutterwave">
-        <img src="{% static '/images/quidax.png' %}" alt="Quidax">
-        <img src="{% static '/images/UBA.png' %}" alt="Union Bank of Africa">
-        <img src="{% static '/images/quickteller.png' %}" alt="Quickteller">
-        <img src="{% static '/images/cowrywise.png' %}" alt="Cowrywise">
+        <img src="{% static '/images/Flutterwave.svg' %}" alt="Flutterwave">
+        <img src="{% static '/images/quidax.svg' %}" alt="Quidax">
+        <img src="{% static '/images/UBA.svg' %}" alt="Union Bank of Africa">
+        <img src="{% static '/images/quickteller.svg' %}" alt="Quickteller">
+        <img src="{% static '/images/cowrywise.svg' %}" alt="Cowrywise">
     </section>
 
     <section class="section-a">
@@ -61,43 +59,43 @@
         
         <div class="a-container">
             <div class="art-flex">
-                <div class="article-art-1">
-                    <img src="{% static '/images/upload.png' %}" alt="upload illustration">
-                    <p>Upload  and sync your Excel/CSV file from any platforms. Our servers process all your files without limitations.</p>
+                <article class="art-1">
+                    <img src="{% static '/images/file-synchronization.svg' %}" alt="file-synchronization illustration">
+                    <p><span class="spanned">Upload</span> and <span class="spanned">sync</span> your Excel/CSV file from any platforms. Our servers process all your files without limitations.</p>
                     <button class="learn-more">Learn More</button>
-                </div>
+                </article>
     
-                <div class="article-art-3">
-                    <img src="{% static '/images/investigate.png' %}" alt="investigate illustration">
-                    <p>Exccomp investigate and uncover duplicate through comparison of data and information.</p>
+                <article class="art-2">
+                    <img src="{% static '/images/dashboard.svg' %}" alt="dashboard illustration">
+                    <p>Get a visual display of all your data. <span class="spanned">Review</span> important information at once and get a summary <span class="spanned">report</span> of your work done. </p>
                     <button class="learn-more">Learn More</button>
-                </div>
+                </article>
             </div>
 
-            <div class="art-flex">
-                <div class="article-art-2">
-                    <img src="{% static '/images/review.png' %}" alt="review illustration">
-                    <p>Get a visual display of all your data. Review important information at once and get a summary report of your work done. </p>
+            <div class="art-flex art-flex-2">
+                <article class="art-3">
+                    <img src="{% static '/images/duplicate.svg' %}" alt="duplicate illustration">
+                    <p>Exccomp <span class="spanned">investigate</span> and uncover <span class="spanned">duplicate</span> through comparison of data and information.</p>
                     <button class="learn-more">Learn More</button>
-                </div>
+                </article>
     
-                <div class="article-art-4">
-                    <img src="{% static '/images/identify.png' %}" alt="identify illustration">
-                    <p>Exccomp idenitfies spelling errors and highlight case sensitivity in duplicate errors for you.</p>
+                <article class="art-4">
+                    <img src="{% static '/images/highlight.svg' %}" alt="highlight illustration">
+                    <p>Exccomp <span class="spanned">identifies</span> spelling errors and <span class="spanned">highlight</span> case sensitivity in duplicate errors for you.</p>
                     <button class="learn-more">Learn More</button>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="demo">
         <h2>How does Exccomp Works?</h2>
-        <video width="600" height="400" controls>
+        <video width="700" height="320" controls >
             <source src="" type="video/mp4">
             <source src="" type="video/ogg">
             Your browser does not support the video tag.
         </video>
-        <button><a href="">Get Started</a></button>
+        <button class="demo-btn"><a href="">Get Started</a></button>
     </section>
 
     <section class="testimonials">
@@ -105,25 +103,25 @@
         <p>Don’t take our word for it, our customers love what we do and want to tell you about their experience.</p>
         <div class="cards">
             <div class="card">
-                <img src="{% static '/images/olugboyega-aanu.png' %}" alt="Olugboyega Aanu">
+                <img src="{% static '/images/olugboyega-aanu.svg' %}" alt="Olugboyega Aanu">
                 <h4>Olugboyega Aanu</h4>
                 <small>Business Analyst - @Cowrywise</small>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euism et dui, commodo id rhoncus donec platea ipsum dolor sit amet.</p>
             </div>
             <div class="card">
-                <img src="{% static '/images/simon-oladeji.png' %}" alt="Simon Oladeji">
+                <img src="{% static '/images/simon-oladeji.svg' %}" alt="Simon Oladeji">
                 <h4>Simon Oladeji</h4>
                 <small>Accountant - @UBA</small>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euism et dui.</p>
             </div>
             <div class="card">
-                <img src="{% static '/images/maryam-gija.png' %}" alt="Maryam Gija">
+                <img src="{% static '/images/maryam-gija.svg' %}" alt="Maryam Gija">
                 <h4>Maryam Gija</h4>
                 <small>Business Analyst - @I4G</small>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euism et dui, commodo id rhoncus donec platea ipsum.</p>
             </div>
             <div class="card">
-                <img src="{% static '/images/amaka-daniels.png' %}" alt="Amaka Daniels">
+                <img src="{% static '/images/amaka-daniels.svg' %}" alt="Amaka Daniels">
                 <h4>Amaka Daniels</h4>
                 <small>Business Analyst - @Zuri</small>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euism et dui, commodo id rhoncus donec.</p>
@@ -139,26 +137,31 @@
     </section>
 
     <footer>
-        <section class="newsletter-section">
-            <p>Get the latest deals and newsletters directly to your inbox.</p>
-            <div class="news-form-area"><div class="search-input"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a><input type="email" name="news-email" id="news-email" placeholder="Email Address"></div>
-                <button type="submit">Subscribe</button></div>
+        <section class="subscribe">
+            <p>Get latest deals and newsletters directly to your inbox.</p>
+            <div>
+                <label for="email">
+                    <span class="sr-only" hidden>Email</span>    
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                </label>
+                <button class="filled-bg-btn">Subscribe</button>
+            </div>
         </section>
 
         <section class="footer-main">
             <div>
-                <img src="{% static '/images/logo-footer.png' %}" alt="logo" class="logo footer-logo">
+                <img src="{% static '/images/Logo-footer.svg' %}" alt="logo" class="logo footer-logo">
                 <ul class="socials">
                     <li>
-                        <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+                        <span class="fa fa-brands fa-instagram" aria-hidden="true"></span>
                         <span class="sr-only">Instagram</span>
                     </li>
                     <li>
-                        <span class="fa-brands fa-facebook" aria-hidden="true"></span>
+                        <span class="fa fa-brands fa-facebook-f" aria-hidden="true"></span>
                         <span class="sr-only">Facebook</span>
                     </li>
                     <li>
-                        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+                        <span class="fa fa-solid fa-envelope" aria-hidden="true"></span>
                         <span class="sr-only">Email</span>
                     </li>
                 </ul>
