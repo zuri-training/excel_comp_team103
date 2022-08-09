@@ -1,0 +1,29 @@
+Name: Oluwabusola Awotiku
+Role: Team lead assitant and supervision of designer's work.
+Slack username: Nezuko
+Github Username: BubuNez
+Track: Full-stack Product Design
+Contributions are as follows:
+UX work and UI work
+UX work (Research plan, Organized notes, Empathy map, User persona, Brainstorming with team)
+UI work (Wireframe, lo fi and hi fi of Contact Us and Register page; mobile view of Contact Us and Register page, Prototyping)
+Research plan: https://docs.google.com/document/d/14tk1IhLTt0uTZ20fqV--kAOUynJCG-dfWCMGIhPw8tc/edit?usp=sharing
+Organized notes: https://www.figma.com/file/5IeX0C38DNqZ91MpjKfQGp/Team-103-Research-work?node-id=2%3A2
+Empathy map: https://www.figma.com/file/5IeX0C38DNqZ91MpjKfQGp/Team-103-Research-work?node-id=2%3A40
+User persona: https://www.figma.com/file/5IeX0C38DNqZ91MpjKfQGp/Team-103-Research-work?node-id=2%3A164
+Brainstorming: https://www.figma.com/file/5IeX0C38DNqZ91MpjKfQGp/Team-103-Research-work?node-id=2%3A96
+Wireframe of Contact Us page (Web design): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=701%3A10722
+Lo fi of Contact Us page (Web design): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1835%3A2293
+Hi fi of Contact Us page(Web design ): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1531%3A1854
+Wireframe of Register page (Web design): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=265%3A99
+Lo fi of Register page (Web design): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1834%3A4345
+Hi fi of Register page (Web design): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1567%3A1916
+Mobile view of Register page (hi fi): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1326%3A4115
+Mobile view of Register page (lo fi): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1926%3A64597
+Mobile view of Contact Us page (hi fi): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1898%3A2967
+Mobile view of Contact Us page (lo fi): https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1926%3A65465
+I collaborated with the developers who worked with both pages. 
+The link to Contact Us page isssue is as follows: https://github.com/zuri-training/excel_comp_team103/issues/3
+The link to Register page issues is as follows: https://github.com/zuri-training/excel_comp_team103/issues/4
+Prototyping for the hi fi design (Flow 1): https://www.figma.com/proto/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?page-id=1%3A3&node-id=1567%3A2522&viewport=500%2C195%2C0.02&scaling=min-zoom&starting-point-node-id=1567%3A2522&show-proto-sidebar=1
+Prototyping for the mobile hi fi design (Flow 2): https://www.figma.com/proto/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?page-id=1%3A3&node-id=1884%3A2648&viewport=500%2C195%2C0.02&scaling=min-zoom&starting-point-node-id=1006%3A2203&show-proto-sidebar=1
