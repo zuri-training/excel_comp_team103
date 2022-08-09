@@ -89,7 +89,7 @@ header div {
 }
 
 /* Main Content Styling */
-main {
+main.home {
     display: flex;
     justify-content: space-around;
     align-items: center;
