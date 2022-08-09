@@ -12,7 +12,7 @@ exccomp
 
 ## Logo
 
-![exccomp logo](./excel_comp/homepage/static/images/logo1.png "Unique exccomp logo.")
+![exccomp logo](./excel_comp/homepage/static/images/Logo2.svg "Unique exccomp logo.")
 
 ## Goal
 
