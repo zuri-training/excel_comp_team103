@@ -1,22 +1,33 @@
-:root {
-    --header-bg: #D3EAED;
-    --primary-40: #49A6B2;
-    --primary-50: var(--primary-60);
-    --primary-60: #19636D;
-    --secondary-50: #E8E7CD;
-    --white: #fff;
-    --greys-20: #E0E0E1;
-    --greys-50: #64656A;
-    --copy: #F9F9F3;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;}
 
+:root {
+    --primary-20: #D3EAED;
+    --primary-40: #49A6B2;
+    --primary-50: #2594A3;
+    --primary-60: #19636D;
+    --secondary-20: #F9F9F3;
+    --secondary-40: #E8E7CD;
+    --secondary-50: #E8E7CD;
+    --sponsor-bg: #EEF6F8;
+    --section-a-bg: #FCFCF9;
+    --white: #fff;
+    --greys-20: #E0E0E1;
+    --greys-30: #B2B2B5;
+    --greys-50: #64656A;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 /* Header Styles and Button */
@@ -24,7 +35,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--header-bg);
+    background-color: var(--primary-20);
+    color: var(--primary-60);
     padding: 16px 0;
 }
 
@@ -39,6 +51,12 @@ header a {
     color: unset;
 }
 
+header nav a:hover {
+    padding-bottom: 3px;
+    border-bottom: 4px solid var(--primary-50);
+    border-radius: 4px;
+}
+
 header li a {
     color: var(--primary-50);
 }
@@ -46,22 +64,28 @@ header li a {
 button {
     font-weight: 500;
     font-size: 16px;
+    background-color: var(--white);
+    color: var(--primary-50);
     border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(25, 99, 109, 0.2);
+    padding: 10px 20px;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
 }
 
 .filled-bg-btn {
     background-color: var(--primary-50);
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
 }
 
 .outlined-btn {
     border: 1px solid var(--primary-50);
-    background-color: var(--header-bg);
+    background-color: var(--primary-20);
     color: var(--primary-50);
-    padding: 9px 20px;
-    border-radius: 4px;
 }
 /* main div */
 a{
@@ -95,7 +119,7 @@ i{
     margin: 15% 3% 15% 6%;
     padding: 5%;
     text-align: left;
-    color: #19636D;
+    color: #2594A3;
 }
 .text h1{
     font-size: 48px;
@@ -163,7 +187,7 @@ i{
     justify-content: left;
     align-items: left;
     margin: auto;
-    color: #19636D;
+    color: #2594A3;
 }
 .features-text h1{
     font-size: 36px;
@@ -333,61 +357,42 @@ em{
     justify-content: justify;
     gap: 3%;
 }
-/* Footer styles */
-/* style for the newsletter-subscription section */
-.newsletter-section{
-    height: 113px;
-    margin: 0 auto;
-    background-color: #D3EAED;
+/* Footer Styling */
+/* Subscribe styling */
+.subscribe {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    color: #64656A;
+    background-color: var(--primary-20);
+    padding: 24px 96px;
 }
-.news-form-area{
-    width: 45%;
-    height: 50%;
-    background-color: white;
+
+.subscribe p {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--greys-50);
+}
+
+.subscribe > div {
+    background-color: var(--white);
+    padding: 3px 3px 3px 10px;
+    border: 1px solid var(--greys-30);
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
-.search-input{
-    margin-left: 2%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-.search-input a{
-    margin-right: 5%;
-
-}
-.search-input input{
-    padding: 3% 2%;
-    width: 80%;
+input[type=email] {
     border: none;
-    border-radius: 4px;
-    background: white;
-    font-weight: bold;
-    color: silver;
-
-}
-.news-form-area button{
-    width: 30%;
-    height: 90%;
-    margin-right: 0.5%;
-    border: 1px solid silver;
-    border-radius: 4px;
-    background: #19636D;
-    font-weight: bold;
-    color: white;
-
+    padding: 10px 150px 10px 3px;
 }
 
+/* input[type=email]:focus,
+input[type=email]:active {
+    outline: none;
+    border: none;
+} */
 
+
+/* Main footer Styling */
 .footer-main {
     display: flex;
     background-color: var(--primary-60);
@@ -400,6 +405,18 @@ em{
     display: flex;
     gap: 20px;
     list-style: none;
+    padding-top: 24px;
+}
+
+.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border: 1.5px solid var(--white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .footer-flex {
@@ -417,7 +434,7 @@ em{
 
 .footer-copyright {
     text-align: center;
-    background-color: var(--copy);
+    background-color: var(--secondary-20);
     color: var(--primary-40);
     padding: 16px 0;
 }
