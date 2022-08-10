@@ -31,9 +31,7 @@
             </ul>
         </nav>
         <div>
-            <h4>Hello, {{request.user}}</h4>
-            <button class="filled-bg-btn"><a href="{% url 'accounts:register' %}">Register</a></button>
-            <button class="outlined-btn"><a href="{% url 'accounts:login' %}">Log in</a></button>
+            <h3 style="margin-top: 10px;">Hello, {{request.user}}</h3>
             <button class="filled-bg-btn"><a href="{% url 'accounts:logout' %}">Logout</a></button>
         </div>
     </header>
