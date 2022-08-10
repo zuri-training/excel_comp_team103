@@ -52,30 +52,40 @@
             </div>
             <div class="element" id="regform">
                 <h1 style="text-align:center;">Create an account</h1><br>
-                            <form action="">
+                  {% block content %}
+                            <form method="POST" class="form_group" action="">
+                                {% csrf_token %}
+                            
                                 <p>
                                     <label for="email">Email address</label><br>
-                                    <input type="email" id="email" name="email" placeholder="henrydaniel@example.com"><br><br>
-                                </p>
+                                    {{form.email}}                                </p>
     
                                 <p>
-                                    <label for="password">Password</label><br>
-                                    <input type="password" id="password" name="password" placeholder="•••••••••••">    
-                                    <input type="checkbox" id="toggle-password">
-                                    <label for="toggle-password">Show Password</label>
+                                    <br>
+                                    <label for="password">Username</label><br>
+                                    {{form.username}}    
+                                    
+                                </p>
+                                
+                                <p>
+                                    <br>
+                                    <label for="password"> Password</label><br>
+                                    {{form.password1}}   
+                                    
                                 </p>
                                 <p>
-                                    <label for="password">Confirm password</label><br>
-                                    <input type="password" id="password" name="password" placeholder="•••••••••••">    
-                                    <input type="checkbox" id="toggle-password">
-                                    <label for="toggle-password">Show Password</label>
+                                    <br>
+                                    <label for="password">Confirm Password</label><br>
+                                    {{form.password2}}   
+                                    
                                 </p>
                                 <p style="text-align:center;">By registering, you agree to ExcComp's <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a>.</p><br>
                                 <p>
-                                    <button type="submit" class="registerbtn">Register</button>
+                                    <input type="submit" class="registerbtn" name="Create user">
                                 </p><br>                                
                                 <p style="text-align:center;">Already have an account? <a href="{% url 'accounts:login' %}">Log In</a></p>
                             </form>
+                            {% endblock %}
             </div>
         </section>
         <script>

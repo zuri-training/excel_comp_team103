@@ -74,23 +74,32 @@
                 <button class="register-button">Register</button>
               </div>
               <h3>Welcome back!</h3>
+              {% block content %}
+              <form action="" class="from-group" method="POST">
+              {% csrf_token %}
               <div class="email-box">
-                <label for="email" class="email">Email address</label>
+                <label for="username" class="email">Username</label>
                 <input
-                  type="email"
-                  class="email"
-                  placeholder="johndoe@example.com"
+                  type="text"
+                  class="form-control"
+                  name="username"
+                  placeholder="Username..."
                 />
               </div>
               <div class="password-box">
                 <label for="password" class="passwd">Password</label>
                 <input
                   type="password"
-                  class="passwd"
+                  class="form-control"
+                  name="password"
                   placeholder=".............."
                 />
                 <i class="fa-solid fa-eye-slash"></i>
               </div>
+
+              {% for message in messages %}
+              <p id="messages">{{message}}</p>
+              {% endfor %}
               <div class="remember">
                 <div class="checked">
                   <input type="checkbox" class="check" />
@@ -100,6 +109,8 @@
               </div>
               <div class="submit">
                 <input type="submit" value="Login" class="submit-btn" />
+              </form>
+              {% endblock %}
               </div>
             </div>
           </div>
