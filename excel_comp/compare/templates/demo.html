@@ -39,9 +39,93 @@
     </header>
 
     <main>
-        rendered
-    </main>
-
+         <div class="parent"></div>
+        <section class="container">
+            <div class="element" id="welcome">
+                <h1>Welcome to Exc<span style="color:#2594A3;">Comp</span></h1><br><br>
+                <h2>Compare and duplicate files with ease</h2><br>
+                <p>In a few quick and easy steps, browse through <br> options and get file duplicates without formulas.</p><br>
+                <p>Start comparing your files today.</p><br>
+                <p>Best of all? It's free</p>
+            </div>              
+            <div class="element" id="videos">
+                <video poster="/logo1.png" controls class="video">
+                    Your browser does not support HTML video.
+                </video>
+                <div id="play" class="playpause"></div>
+            </div>    
+        </section>  
+        <div class="parent"></div>       
+        <div style="background-color:#F9F9F3; text-align:center; padding: 30px;" >
+            <button id="checkfile">Check your file below</button>
+        </div>
+        <section class="FlexContainer" id="compare">
+            <div class="drop-zone" id="drop">
+                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" class="drop-zone__input" accept=".xls,.xlsx,.csv">
+            </div>
+            <div class="drop-zone"></div>
+        </section>    
+            <section style="background-color:#F9F9F3;"> 
+                <div style="padding-left: 60px; padding-right: 60px; display: flex;   justify-content: space-around; ">
+                    <div>
+                        <button id="upload">Upload Excel/CSV file</button>  
+                    </div>
+                    <img src="/Vectorundo.jpg" alt="">
+                    <img src="/Vectorredo.jpg" alt="">
+                    <button id="clear">Clear</button>
+                    <div style="text-align: right;">
+                        <button id="later">Save For Later </button>
+                    </div>
+                </div>               
+                <div style="  padding-left: 130px; padding-top: 30px; padding-right: 130px; display: flex;
+                justify-content: space-between;">
+                    <button id="download">Save To Download</button> 
+                    <p><a style="color: #E0E0E1;" href="http://">View Saved Items</a></p>
+                </div>
+                <div style="text-align:center; padding: 30px;">
+                    <button id="check">Check Duplicates</button>
+                </div>
+            </section>
+        </section>
+        <div class="parent"></div>       
+        <section class="main">
+            <div>
+                <h1>How to compare excel/csv files for free</h1><br><br>
+                <small>Upload</small><br><br>
+                <h2>Upload file format to the software</h2><br>
+                <p>Click on the “Upload Excel/CSV” <br> button to access and upload excel/CSV files directly from <br> your device.</p><br>
+                <div  id="videos">
+                    <video poster="/logo1.png" controls class="video">
+                        Your browser does not support HTML video.
+                    </video>
+                    <div id="play" class="playpause"></div>
+                </div><br>
+            </div>
+            <div class="right">
+                <small>Check duplicate</small><br><br>
+                <h2>Choose function</h2><br>
+                <p>From an array of functions and option, choose an opton that fits your task at hand.</p><br>
+                <div  id="videos">
+                    <video poster="/logo1.png" controls class="video">
+                        Your browser does not support HTML video.
+                    </video>
+                    <div id="play" class="playpause"></div>
+                </div><br>
+            </div>
+            <div>
+                <small>Save</small><br><br>
+                <h2>Save to Continue action later or download file</h2><br>
+                <p>After completing your task, save your progress to continue later or to download your new file.</p><br>
+                <div  id="videos">
+                    <video poster="/logo1.png" controls class="video">
+                        <source src="http://e14aaeb709f7cde1ae68-a1d0a134a31b545b257b15f8a8ba5726.r70.cf3.rackcdn.com/projects/31432/1427815464209-bf74131a7528d0ea5ce8c0710f530bb5/1280x720.mp4" type="video/mp4" />
+                        Your browser does not support HTML video.
+                    </video>
+                    <div id="play" class="playpause"></div>
+                </div><br>
+            </div>
+        </section>  
     
     <footer>
         <section class="subscribe">
@@ -116,5 +200,78 @@
             <p>&copy; 2022 Zuri. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+            const dropZoneElement = inputElement.closest(".drop-zone");
+        
+            dropZoneElement.addEventListener("click", (e) => {
+            inputElement.click();
+            });
+        
+            inputElement.addEventListener("change", (e) => {
+            if (inputElement.files.length) {
+                updateThumbnail(dropZoneElement, inputElement.files[0]);
+            }
+            });
+        
+            dropZoneElement.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropZoneElement.classList.add("drop-zone--over");
+            });
+        
+            ["dragleave", "dragend"].forEach((type) => {
+            dropZoneElement.addEventListener(type, (e) => {
+                dropZoneElement.classList.remove("drop-zone--over");
+            });
+            });
+        
+            dropZoneElement.addEventListener("drop", (e) => {
+            e.preventDefault();
+        
+            if (e.dataTransfer.files.length) {
+                inputElement.files = e.dataTransfer.files;
+                updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+            }
+        
+            dropZoneElement.classList.remove("drop-zone--over");
+            });
+        });
+        
+        /**
+         * Updates the thumbnail on a drop zone element.
+         *
+         * @param {HTMLElement} dropZoneElement
+         * @param {File} file
+         */
+        function updateThumbnail(dropZoneElement, file) {
+            let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+        
+            // First time - remove the prompt
+            if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+            dropZoneElement.querySelector(".drop-zone__prompt").remove();
+            }
+        
+            // First time - there is no thumbnail element, so lets create it
+            if (!thumbnailElement) {
+            thumbnailElement = document.createElement("div");
+            thumbnailElement.classList.add("drop-zone__thumb");
+            dropZoneElement.appendChild(thumbnailElement);
+            }
+        
+            thumbnailElement.dataset.label = file.name;
+        
+            // Show thumbnail for image files
+            if (file.type.startsWith("image/")) {
+            const reader = new FileReader();
+        
+            reader.readAsDataURL(file);
+            reader.onload = () => {
+                thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+            };
+            } else {
+            thumbnailElement.style.backgroundImage = null;
+            }
+        }
+    </script>
 </body>
 </html>
