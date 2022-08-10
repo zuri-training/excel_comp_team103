@@ -12,11 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-<<<<<<< Updated upstream
 from decouple import config
-=======
 from pickle import FALSE
->>>>>>> Stashed changes
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,11 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('DJANGO_SECRET_KEY', default='django-insecure-ic4v!ki4j=5ywd9_h8mgg6uyap5t85$bam2%9jme^6151dgy!$')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< Updated upstream
 DEBUG = config('DJANGO_DEBUG', default=True, cast=bool)
-=======
-DEBUG = False
->>>>>>> Stashed changes
+# DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
