@@ -7,11 +7,13 @@ This file contains my individual contribution to the excel_comp project during t
 
 * Design of [Contact Us Page]('[link] - ('https://github.com/zuri-training/excel_comp_team103/tree/contact_page/excel_comp/contact_page')')
 * Design of [About Us Page]('[link] -('https://github.com/zuri-training/excel_comp_team103/tree/contact_page/excel_comp/about_us')')
-* Design of [404 Error Page Page]('[link] ('https://github.com/zuri-training/excel_comp_team103/tree/contact_page/excel_comp/homepage')')
+* Design of [404 Error Page Page]('[link] - ('https://github.com/zuri-training/excel_comp_team103/tree/contact_page/excel_comp/homepage')')
+* Design of [Dashboard Page] ('[link] - ('https://github.com/zuri-training/excel_comp_team103/tree/dashboard/excel_comp/homepage/templates')')
 * Linking of views/url in collaboration with Simon Oladeji
 * Backend feature research
 
   All these were created and pushed  through the Contact_page branch https://github.com/zuri-training/excel_comp_team103/tree/contact_page/excel_comp
+  And dashboard branch https://github.com/zuri-training/excel_comp_team103/tree/dashboard/excel_comp
 
 
 ### Issues resolved
