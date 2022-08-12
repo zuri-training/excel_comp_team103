@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def registerPage(request):
+    if user
     form = RegForm()
 
 
@@ -48,3 +49,5 @@ def logoutUser(request):
 
 def error_404_view(request,exception):
     return render(request, 'not-found.html')
+
+    

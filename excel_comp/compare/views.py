@@ -51,3 +51,6 @@ def create_excel_with_data(data, duplicates):
     r.formula = formula_array
     ws.conditional_formatting.add("A1:O100", r)
     wb.save("uploads/sample.xlsx")
+
+def userDashboard(request):
+    return render(request, 'dashboard.html')    

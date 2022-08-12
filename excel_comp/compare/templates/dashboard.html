@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
+        
+        <title>Dashboard | exccomp</title>
+</head>
+<body>
+</head>
+
+<body>
+
+    <main>
+        <div id="dashboard-wrapper">
+            <section id="left-bar">
+                <div class="logo">
+                    <a href="{% url 'homepage:homepage' %}"><img src="{% static '/images/Logo-footer.svg' %}" alt="logo"></a>
+                </div>
+                <div class="trial-version">
+
+                </div>
+                <div class="menu">
+                    <p class="menu-par"><span>Create New File </span> <i class="fa-solid fa-folder-plus"></i></p>
+                    <ul>
+                        <li class="menu-par" ><i class="fa-solid fa-file"></i> <span>My Files</span>
+                        </li>
+                        <ul>
+                            <li class="file-option"> <i class="fa-solid fa-file-arrow-down"> </i><span>Download</span></i></li>
+                            <li class="file-option"> <i class="fa-solid fa-file-zipper"></i><span>Archive</span></li>
+                        </ul>
+                    </ul>
+               
+                    <p class="menu-par"> <i class="fa-solid fa-gear"></i> <span>Settings</span></p>
+                    <p class="menu-par"> <i class="fa-solid fa-right-from-bracket"></i> <span>Log Out</span></p>
+                </div>
+                
+
+            </section>
+            <section id="main-section-wrapper">
+                <header class="header">
+                        <h1>Good Morning {{request.user}}!</h1>
+                </header>
+                <main class="main-section">
+                    <h1  class="main-h1">New</h1>
+                    <p>Explore these new features made for you</p>
+                    <section class="upload-boxes">
+                        <div class="file-upload">Highlight duplicates </div>
+                        <div class="file-upload">Idenitfy spelling errors </div>
+                        <div class="file-upload">Merge duplicates</div>
+                        <div class="file-upload">Highlight multiple columns in duplicates</div>
+                        <div class="file-upload"> Remove duplicates</div>
+                    </section> 
+                    <h1 class="main-h2">Create new file <i class="fa-solid fa-folder-plus"></i></h1>
+                </main>
+                <footer class="footer">
+                    <h1 class="footer-h1">My Files</h1>
+                    <div class="footer-section">
+                        <p><i class="fa-solid fa-magnifying-glass"></i> <input type="search" name="search" id="search" placeholder="Search"></p>
+                        <p><input type="date" name="date" id="date"></p> 
+                    </div>
+                    <table>
+                        <thead>
+                            <th class="tabe-name">Name</th>
+                            <th class="tabe-file-name">File Name</th>
+                            <th class="tabe-date-created">Date Created</th>
+                            <th class="tabe-download">Download</th>
+                            <th class="tabe-archive">Archive</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                            <tr>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                                <td> - </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </footer>
+                
+            </section>
+            
+            
+        </div>
+    </main>
+
+</body>
+</html>

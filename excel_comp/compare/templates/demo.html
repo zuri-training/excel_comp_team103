@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <div>
-            <h3 style="margin-top: 10px;">Hello, {{request.user}}</h3>
+            <h3 style="margin-top: 10px;">Hello {{request.user}}</h3>
             <button class="filled-bg-btn"><a href="{% url 'accounts:logout' %}">Logout</a></button>
         </div>
     </header>
@@ -79,7 +79,7 @@
                 <div style="  padding-left: 130px; padding-top: 30px; padding-right: 130px; display: flex;
                 justify-content: space-between;">
                     <button id="download">Save To Download</button> 
-                    <p><a style="color: #E0E0E1;" href="http://">View Saved Items</a></p>
+                    <p><a style="color: #E0E0E1;" href="">View Saved Items</a></p>
                 </div>
                 <div style="text-align:center; padding: 30px;">
                     <button id="check">Check Duplicates</button>
