@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --primary-20: #D3EAED;
+    --primary-40: #49A6B2;
+    --primary-50: #2594A3;
+    --primary-60: #19636D;
+    --secondary-20: #F9F9F3;
+    --secondary-40: #E8E7CD;
+    --secondary-50: #E8E7CD;
+    --sponsor-bg: #EEF6F8;
+    --section-a-bg: #FCFCF9;
+    --white: #fff;
+    --greys-20: #E0E0E1;
+    --greys-30: #B2B2B5;
+    --greys-50: #64656A;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* Header Styles and Button */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-20);
+    color: var(--primary-60);
+    padding: 16px 0;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: unset;
+}
+
+header nav a:hover {
+    padding-bottom: 3px;
+    border-bottom: 4px solid var(--primary-50);
+    border-radius: 4px;
+}
+
+header li a {
+    color: var(--primary-50);
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--white);
+    color: var(--primary-50);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(25, 99, 109, 0.2);
+    padding: 10px 20px;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+.filled-bg-btn {
+    background-color: var(--primary-50);
+    color: var(--white);
+}
+
+.outlined-btn {
+    border: 1px solid var(--primary-50);
+    background-color: var(--primary-20);
+    color: var(--primary-50);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 87%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+    gap: 32px
+}
+
+
+.login-content {
+    height: 564px;
+    width: 504px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 32px 40px;
+    border: 2px solid #2594A3;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #2594A3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+h3 {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.notify-paragraphs {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.form-control {
+    height: 56px;
+    width: 424px;
+    left: 880px;
+    top: 636px;
+    border-radius: 4px;
+    border-color: #B2B2B5;
+    color: #64656A;
+    background-color: white;
+
+}
+
+.submit-btn {
+    background-color: #2594A3;
+    color: white;
+    outline: none;
+    border: none;
+    height: 56px;
+    width: 424px;
+    left: 880px;
+    top: 636px;
+    border-radius: 4px;
+    padding: 16px, 32px, 16px, 32px;
+    margin: 30px 0;
+}
+
+.submit-btn:hover {
+    background-color: #2594a3b6;
+    transition: .4s linear;
+}
+
+.forgot {
+    margin-left: 40%;
+    color: #2594A3;
+}
+
+.register {
+    color: #2594A3;
+}
+
+/* @media only screen and (min-width: 800px) {
+.main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+        margin: auto;
+        font-size: 16px;
+        font-family: 'lato', 'sans-serif';
+    }
+
+.login-image {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.link-container {
+    display: flex;
+}
+
+.link {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 6%;
+    font-weight: 300;
+}
+
+.home {
+    font-weight: 700;
+}
+
+
+
+
+.link a {
+    text-decoration: none;
+    color: #2594A3;
+}
+
+.nav-button {
+    display: flex;
+}
+
+.logo {
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    mix-blend-mode: darken;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2594A3;
+}
+
+.logo-col {
+    color: #434347;
+    font-weight: 800;
+}
+
+.bars{
+    display: none;
+}
+
+.nav-button {
+    outline: none;
+
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+}
+.register-btn {
+    background-color: transparent;
+    border-color: #2594A3;
+    margin: 0 8px;
+    outline: none;
+    padding: 12px 0;
+    width: 100px;
+    border-width: 1px;
+    color: #2594A3;
+    border-radius: 4px;
+    display: block;
+}
+.nav{
+    display: none;
+}
+} */

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;}
+
+:root {
+    --header-bg: #D3EAED;
+    --primary-40: #49A6B2;
+    --primary-50: var(--primary-60);
+    --primary-60: #19636D;
+    --secondary-50: #E8E7CD;
+    --white: #fff;
+    --greys-20: #E0E0E1;
+    --greys-50: #64656A;
+    --copy: #F9F9F3;
+}
+
+#page-not-found-wrapper{
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    background-color: #2594A3;
+}
+.text-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;    
+    color: white;
+    margin: auto;
+}
+.not-found-button{
+    background-color: white;
+    color: #19636D;
+    font-weight: bold;
+    border-radius: 3px;
+    border: unset;
+    height: 5vh;
+    width: 15vw;
+}
+.image-section{
+    width: 50%;
+    margin: auto;
+}
