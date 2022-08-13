@@ -70,8 +70,8 @@ To highlight or remove duplicates across multiple columns; while handling each c
 1. See our [Design Documentation](https://slite.com/organization/join-link/okeogheneonobraekpeyan/e0fDCHxEouZAvG6YxkLWD7/default)
 
 ## Architecture we're using 
-* Monolith (Django Templating) 
-and some other necessary info to set it up.
+* Monolith (Django Templating)
+* 
 
 ## File structure
 _This shows what each folder is_
