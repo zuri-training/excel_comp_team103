@@ -69,4 +69,18 @@ To highlight or remove duplicates across multiple columns; while handling each c
 1. View our [Figma Design](https://www.figma.com/file/HTwo1y7ypEGFKyU5bg4ysm/Team---103-Project?node-id=1%3A3)
 1. See our [Design Documentation](https://slite.com/organization/join-link/okeogheneonobraekpeyan/e0fDCHxEouZAvG6YxkLWD7/default)
 
+## Architecture we're using 
+* Monolith (Django Templating) 
+and some other necessary info to set it up.
+
+## File structure
+_This shows what each folder is_
+
+1. about_us - this is a django app in the project, containing everything that renders/serves the about page
+1. accounts - this is a django app that renders the login/signup page and also contains the authentication codes
+1. compare - this is another django app that renders the compare page
+1. contact_page - this is another django app that renders the contact us page
+1. excel_comp -  this is the root django project containing all the settings for the project
+1. homepage - this is a django app containing the static files (css, images, js), landing page (home.html)
+
 ###### Zuri Team Inc | I4G x Zuri Project Phase
