@@ -23,7 +23,6 @@ urlpatterns = [
     path('contact/', include('contact_page.urls')),
     path('', include('compare.urls')),
     path('account/', include('accounts.urls')),
-    path('', include('userhome.urls')),
 ]
 
 handler404 = 'accounts.views.error_404_view'

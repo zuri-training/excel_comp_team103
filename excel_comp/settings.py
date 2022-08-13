@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'about_us',
     'contact_page',
     'compare',
-    'userhome',
 
     # third party apps
     'django_extensions',
