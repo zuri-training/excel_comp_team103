@@ -1,137 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200&family=Inter:wght@100&family=Lato&family=Lexend:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap"
-      rel="stylesheet"/>
-    {% load static%}
-    <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}" />
-    <script
-      src="https://kit.fontawesome.com/1bf10dbabf.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Login Page</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <nav class="navbar">
-          <div class="logo-container">
-            <img src="{% static '/images/logo.jpg' %}" class="logo" alt="logo" />
-            <p class="logo-name">exc<span class="logo-col">comp</span></p>
-          </div>
-          <ul class="link-container">
-            <li class="link home"><a href="{% url 'homepage:homepage' %}">Home</a></li>
-            <li class="link"><a href="{% url 'about_us:about' %}">About Us</a></li>
-            <li class="link"><a href="">Help & Support</a></li>
-            <li class="link"><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
-          </ul>
-          <div class="nav-button">
-            <button class="login-btn">Log in</button>
-            <button class="register-btn">
-                <a href="{% url 'accounts:register' %}" style="color: unset; text-decoration: none;">
-                    Register
-                </a>
-            </button>
-            <button class="bars"><i class="fa-solid fa-bars"></i></button>
-          </div>
-        </nav>
-      </div>
-      <div class="nav">
-        <div class="nav-header">
-          <div class="empty"></div>
-          <button class="toggle"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-        <ul class="linkss">
-          <li class="links homee"><a href="">Home</a></li>
-          <li class="links"><a href="">About Us</a></li>
-          <li class="links"><a href="">Help & Support</a></li>
-          <li class="links"><a href="">Blog</a></li>
-          <li class="links"><a href="">Contact Us</a></li>
-        </ul>
-        <div class="logo-contain">
-          <div class="logos">
-            <img src="./navlogo.jpg" class="log" alt="logo" />
-            <p class="logo-nam">exc<span class="logo-colo">comp</span></p>
-          </div>
-          <p class="copyright">
-            Copyright &copy; 2022 Zuri All Rights Reserved
-          </p>
-        </div>
-      </div>
-      <main>
-        <div class="main">
-          <div class="login-image">
-            <img src="{% static '/images/login.svg' %}" alt="image" />
-          </div>
-          <div class="login-contain">
-            <div class="login-content">
-              <div class="buttons">
-                <button class="login-button">Login</button>
-                <button class="register-button">Register</button>
-              </div>
-              <h3>Welcome back!</h3>
-              {% block content %}
-              <form action="" class="from-group" method="POST">
-              {% csrf_token %}
-              <div class="email-box">
-                <label for="username" class="email">Username</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="username"
-                  placeholder="Username..."
-                />
-              </div>
-              <div class="password-box">
-                <label for="password" class="passwd">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="password"
-                  placeholder=".............."
-                />
-                <i class="fa-solid fa-eye-slash"></i>
-              </div>
 
-              {% for message in messages %}
-              <p id="messages">{{message}}</p>
-              {% endfor %}
-              <div class="remember">
-                <div class="checked">
-                  <input type="checkbox" class="check" />
-                  <p class="rem">Remember me</p>
-                </div>
-                <p class="forgot">Forgot Password?</p>
-              </div>
-              <div class="submit">
-                <input type="submit" value="Login" class="submit-btn" />
-              </form>
-              {% endblock %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  {% load static%}
+  <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}" />
+  <script src="https://kit.fontawesome.com/1bf10dbabf.js"
+    crossorigin="anonymous"></script>
+  <title>Login Page</title>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="{% url 'homepage:homepage' %}">
+      <img src="{% static '/images/Logo2.svg' %}" alt="logo" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
+        <li><a href="{%url 'about_us:about' %}">About Us</a></li>
+          <li><a href="{% url 'compare:compare' %}">Compare </a></li>
+        <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="filled-bg-btn"><a
+          href="{% url 'accounts:register' %}">Register</a></button>
     </div>
+  </header>
 
-    <script>
-      const nav = document.querySelector(".nav");
-      const bar = document.querySelector(".bars");
-      const hide = document.querySelector(".toggle");
-      const container = document.querySelector(".container");
+  <main>
+    <div class="main">
+      <div class="login-image">
+        <img src="{% static '/images/login.svg' %}" alt="image" />
+      </div>
+      <div class="login-contain">
+        <div class="login-content">
+          <h3>Welcome back!</h3>
+          <p class="notify-paragraphs">It’s nice to see you again.</p>
+          {% block content %}
+          <form action="" class="from-group" method="POST">
+            {% csrf_token %}
+            <div class="email-box">
+              <p for="username" class="email">Email or Username</p>
+              <input type="text" class="form-control" name="username"
+                placeholder="henrydaniel@example.com" />
+            </div>
+            <div class="password-box">
+              <p for="password" class="passwd">Password </p>
+              <input type="password" class="form-control" name="password"
+                placeholder=".............." />
 
-      bar.addEventListener("click", function () {
-        nav.classList.add("show-link");
-        container.classList.add("blur");
-      });
-      hide.addEventListener("click", function () {
-        nav.classList.remove("show-link");
-        container.classList.remove("blur");
-      });
-    </script>
-  </body>
+            </div>
+
+            {% for message in messages %}
+            <p id="messages">{{message}}</p>
+            {% endfor %}
+            <div class="remember">
+              <div class="checked">
+                <input type="checkbox" class="check" />
+                <span class="rem">Remember me</span> <span class="forgot">Forgot
+                  Password?</span>
+                <div class="submit">
+                  <input type="submit" value="Login" class="submit-btn" />
+                  <p class="notify-paragraphs">New user? <a
+                      href="{% url 'accounts:register' %}"><span class="register">Create
+                        an account</span></a>
+          </form>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  </div>
+
+  <script>
+    const nav = document.querySelector(".nav");
+    const bar = document.querySelector(".bars");
+    const hide = document.querySelector(".toggle");
+    const container = document.querySelector(".container");
+
+    bar.addEventListener("click", function () {
+      nav.classList.add("show-link");
+      container.classList.add("blur");
+    });
+    hide.addEventListener("click", function () {
+      nav.classList.remove("show-link");
+      container.classList.remove("blur");
+    });
+  </script>
+</body>
+
 </html>

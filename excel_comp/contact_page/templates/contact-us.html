@@ -25,13 +25,20 @@
                 <ul>
                     <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
                     <li><a href="{%url 'about_us:about' %}">About Us</a></li>
-                    <li><a href="">Help & Support</a></li>
+                <li><a href="{% url 'compare:compare' %}">Compare </a></li>
                     <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
                 </ul>
             </nav>
             <div>
-                <button class="filled-bg-btn"><a href="{% url 'accounts:register' %}">Register</a></button>
+                {% if request.user.is_authenticated %}
+                <h3 style="margin-top: 10px;">Hello {{request.user}}</h3>
+                <button class="filled-bg-btn"><a href="{% url 'compare:dashboard' %}">Dashboard</a></button>
+                <button class="filled-bg-btn"><a href="{% url 'accounts:logout' %}">Logout</a></button>
+                {% else %}
+                <button class="filled-bg-btn"><a
+                        href="{% url 'accounts:register' %}">Register</a></button>
                 <button class="outlined-btn"><a href="{% url 'accounts:login' %}">Log in</a></button>
+                {% endif %}
             </div>
         </header>
     <main id="contactus-wrapper">

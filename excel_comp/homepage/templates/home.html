@@ -25,13 +25,21 @@
             <ul>
                 <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
                 <li><a href="{%url 'about_us:about' %}">About Us</a></li>
-                <li><a href="">Help & Support</a></li>
+                <li><a href="{% url 'compare:compare' %}">Compare </a></li>
                 <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
             </ul>
         </nav>
         <div>
-            <button class="filled-bg-btn"><a href="{% url 'accounts:register' %}">Register</a></button>
+            {% if request.user.is_authenticated %}
+            <h3 style="margin-top: 10px;">Hello {{request.user}}</h3>
+            <button class="filled-bg-btn"><a
+                    href="{% url 'compare:dashboard' %}">Dashboard</a></button>
+            <button class="filled-bg-btn"><a href="{% url 'accounts:logout' %}">Logout</a></button>
+            {% else %}
+            <button class="filled-bg-btn"><a
+                    href="{% url 'accounts:register' %}">Register</a></button>
             <button class="outlined-btn"><a href="{% url 'accounts:login' %}">Log in</a></button>
+            {% endif %}
         </div>
     </header>
 
@@ -39,7 +47,7 @@
         <div class="hero-text">
             <h1 class="hero-title">A Better & faster way to use your spreadsheet.</h1>
             <p class="hero-par">“Errors using inadequate data are much less than those using no data at all.” — Charles Babbage</p>
-            <button><a href="{% url 'compare:unauth' %}">Get Started</a></button>
+            <button><a href="{% url 'compare:compare' %}">Get Started</a></button>
         </div>
 
         <div>
@@ -97,7 +105,7 @@
             <source src="" type="video/ogg">
             Your browser does not support the video tag.
         </video>
-        <button class="demo-btn"><a href="{% url 'compare:unauth' %}">Get Started</a></button>
+        <button class="demo-btn"><a href="{% url 'compare:compare' %}">Get Started</a></button>
     </section>
 
     <section class="testimonials">

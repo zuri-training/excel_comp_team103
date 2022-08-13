@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def registerPage(request):
-    if user
+    
     form = RegForm()
 
 
@@ -33,7 +33,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('/unauth/')
+            return redirect('/dashboard/')
         else:
             messages.info(request, "username or password is incorrect") 
                

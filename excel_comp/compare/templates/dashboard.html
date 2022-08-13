@@ -12,7 +12,7 @@
         {% load static %}
         <link rel="stylesheet" href="{% static '/css/dashboard.css' %}">
         
-        <title>Dashboard | exccomp</title>
+        <title>Dashboard| exccomp</title>
 </head>
 <body>
 </head>
@@ -22,7 +22,7 @@
     <main>
         <div id="dashboard-wrapper">
             <section id="left-bar">
-                <div class="logo">
+                <div class="logo"> 
                     <a href="{% url 'homepage:homepage' %}"><img src="{% static '/images/Logo-footer.svg' %}" alt="logo"></a>
                 </div>
                 <div class="trial-version">
@@ -40,7 +40,8 @@
                     </ul>
                
                     <p class="menu-par"> <i class="fa-solid fa-gear"></i> <span>Settings</span></p>
-                    <p class="menu-par"> <i class="fa-solid fa-right-from-bracket"></i> <span>Log Out</span></p>
+                    <p class="menu-par"> <i class="fa-solid fa-right-from-bracket"></i> <span>
+                        <a  href="{% url 'accounts:logout' %}">Log Out</a></span></p>
                 </div>
                 
 

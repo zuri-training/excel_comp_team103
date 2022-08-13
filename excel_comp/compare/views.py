@@ -5,8 +5,8 @@ from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.formatting.rule import Rule
 
 # Create your views here.
-def unauth(request):
-    return render(request, "demo.html")
+def compare(request):
+    return render(request, "compare.html")
 
 
 def upload(request):
@@ -32,7 +32,7 @@ def upload(request):
             unique_rows.add(row_data[0])
             excel_data.append(row_data)
         create_excel_with_data(excel_data, duplicate_rows)
-    return render(request, 'demo.html')
+    return render(request, 'compare.html')
 
 
 def create_excel_with_data(data, duplicates):
@@ -52,5 +52,7 @@ def create_excel_with_data(data, duplicates):
     ws.conditional_formatting.add("A1:O100", r)
     wb.save("uploads/sample.xlsx")
 
-def userDashboard(request):
+def dashboard(request):
     return render(request, 'dashboard.html')    
+
+    
