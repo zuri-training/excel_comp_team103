@@ -19,7 +19,6 @@
 
 body{
     height: 1534px;
-    max-width: 100vw;
 }
 
 small{
@@ -80,14 +79,14 @@ button {
     border: none;
 }
 
-.filled-bg-btn {
+#filled-bg-btn {
     background-color: var(--primary-50);
     color: var(--white);
     padding: 10px 20px;
     border-radius: 4px;
 }
 
-.outlined-btn {
+#outlined-btn {
     border: 1px solid var(--primary-50);
     background-color: var(--header-bg);
     color: var(--primary-50);
@@ -221,24 +220,24 @@ button {
     height: 472px;
     margin: 23px;
 }
-  .drop-zone--over {
+.drop-zone--over {
     border-style: solid;
-  }
+}
   
-  .drop-zone__input {
+.drop-zone__input {
     display: none;
-  }
+}
   
-  .drop-zone__thumb {
+.drop-zone__thumb {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
     background-size: cover;
     position: relative;
-  }
+}
   
-  .drop-zone__thumb::after {
+.drop-zone__thumb::after {
     content: attr(data-label);
     position: absolute;
     bottom: 0;
@@ -249,7 +248,7 @@ button {
     background: rgba(0, 0, 0, 0.75);
     font-size: 14px;
     text-align: center;
-  }
+}
 
 .element {
     height: auto;
@@ -260,29 +259,11 @@ button {
     justify-content: space-evenly;
 }
 
+/***************************Body******************************/
 #welcome{
     width: auto;
 }
 
-#videos{
-    width: 527px;
-    height: 344px;
-    left: 817px;
-    top: 168px;
-
-
-}
-video{
-    width: 527px;
-    height: 344px;
-    left: 817px;
-    top: 168px;
-    background: #FFFFFF;
-    /* Primary/50 */
-
-    border: 3px solid #2594A3;
-    border-radius: 1px;
-}
 
 h1{
     font-weight: 700;
@@ -348,6 +329,27 @@ h1{
     padding: 30px;
 
 }
+
+#videos{
+    width: 527px;
+    height: 344px;
+    left: 817px;
+    top: 168px;
+
+
+}
+video{
+    width: 527px;
+    height: 344px;
+    left: 817px;
+    top: 168px;
+    background: #FFFFFF;
+    /* Primary/50 */
+
+    border: 3px solid #2594A3;
+    border-radius: 1px;
+}
+
 
 
 /********************buttons**********************/
@@ -419,6 +421,140 @@ button{
     background: #49A6B2;
     color: white;
 }
+
 /**************Media queries*******************/
+@media only screen and (max-width: 600px) {
+    video{
+        width: 250px;
+        height: 300px;
+        background: #FFFFFF;
+        /* Primary/50 */
+    
+        border: 3px solid #2594A3;
+        border-radius: 1px;
+    } 
+    
+    .right{
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap:wrap;
+      }
+  }
+  
 
 
+
+
+
+
+  
+/***********************Mobile Nav********************************/    
+#menu{
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    margin: 10px;
+    border: 1px solid #2594A3;
+    filter: drop-shadow(0px 4px 8px rgba(25, 75, 109, 0.2));
+    border-radius: 4px;
+}
+
+#menu:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+   
+.menu {
+    display: none;
+}
+    
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+
+}
+
+.overlay #icon{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+    
+.overlay--active {
+    width: 100%;
+}
+    
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+    
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+    text-decoration: none;
+    color: #D3EAED;
+}
+    
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+    
+@media screen and (max-height: 450px) {
+    .overlay a {
+    font-size: 20px;
+    }
+    
+    .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    cursor: pointer; 
+    }
+
+    .regpic {
+        width: 210px;
+        height: 205px;
+        left: 100px;
+        top: 154px
+    }
+}
+    
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+    display: none;
+    }
+
+    .menu {
+    display: initial;
+    }
+
+
+}  
