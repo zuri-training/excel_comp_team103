@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'compare',
 
     # third party apps
-    'django_extensions',
+    #'django_extensions',
 ]
 
 MIDDLEWARE = [

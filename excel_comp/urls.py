@@ -21,7 +21,11 @@ urlpatterns = [
     path('', include('homepage.urls')),
     path('about/', include('about_us.urls')),
     path('contact/', include('contact_page.urls')),
+<<<<<<< HEAD
     path('', include('compare.urls')),
+=======
+    path('', include('compare.urls', namespace="compare" )),
+>>>>>>> 4e6ed2beb927ee5900097cb0411e193efbe03e0d
     path('account/', include('accounts.urls')),
 ]
 
