@@ -5,7 +5,8 @@ name = "pypi"
 
 [packages]
 django = "*"
-python-decouple = "3.6
+python-decouple = "3.6'
+openpyxl = "3.0.10"
 
 [dev-packages]
 
