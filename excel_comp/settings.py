@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 
     # third party apps
     'django_extensions',
-    'python_decouple',
+    
 ]
 
 MIDDLEWARE = [
