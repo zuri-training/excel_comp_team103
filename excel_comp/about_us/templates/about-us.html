@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/about-us.css' %}">
+        
+        <title>About Us | exccomp</title>
+        
+    </head>
+
+    <body>
+        <header>
+            <a class="logo" href="{% url 'homepage:homepage' %}">
+                <img src="{% static '/images/Logo2.svg' %}"  alt="logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage:homepage' %}">Home</a></li>
+                    <li><a href="{%url 'about_us:about' %}">About Us</a></li>
+                    <li><a href="{% url 'compare:compare' %}">Compare </a></li>
+                    <li><a href="{% url 'contact_page:contact_us' %}">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                {% if request.user.is_authenticated %}
+                <h3 style="margin-top: 10px;">Hello {{request.user}}</h3>
+                <button class="filled-bg-btn"><a
+                        href="{% url 'compare:dashboard' %}">Dashboard</a></button>
+                <button class="filled-bg-btn"><a href="{% url 'accounts:logout' %}">Logout</a></button>
+                {% else %}
+                <button class="filled-bg-btn"><a
+                        href="{% url 'accounts:register' %}">Register</a></button>
+                <button class="outlined-btn"><a href="{% url 'accounts:login' %}">Log in</a></button>
+                {% endif %}
+            </div>
+        </header>
+    <main id="aboutus-wrapper">
+    <div class="about-us">
+        <section class="text">
+            <h1>About Us</h1>
+            <p> Exccomp helps users compare spreadsheet contents to ease users’ workload. 
+            It is a mission to eliminate human error and help as much people and 
+            organisations achieve their goals.</p>
+            <button class="button"><a href="#">Read More</a></button>
+            
+        </section>
+        <img src="{% static '/images/pana.svg' %}" alt="aboutus" class="about-image">
+    </div>
+
+    <div class="features">
+        <img src="{% static '/images/pana2.svg' %}" alt="features" class="features-image">
+        <section class="features-text">
+            
+        <h1>Our features made easy</h1>
+        <ul>
+            <li>Upload  and sync your Excel/CSV file from any platforms. Our servers process all your files without limitations.</li>
+            <li>Check for duplicates while comparing your files</li>
+            <li>Get a visual display of all your data. Review important information at once and get a v report of your work done. </li>
+            <li>Highlight and identify spelling errors and duplicate errors easily for you.</li>
+        </ul>
+        <button class="button"><a href="#">Learn more</a></button>
+        </section>
+    </div>
+        
+
+    <div class="team-clients-container">
+        <div class="our-team">
+            <section class="team-text">
+            <h1>Meet our team</h1>
+            <p>At Exccomp, we believe that customers
+                deserve the best services and we aim to 
+                satisfy their demands. </p>
+            <p><i class="fa-solid fa-circle-arrow-left"></i><em class="fa-solid fa-circle-arrow-right"></em></p>
+            </section>
+              
+            <div class="team-display">
+                <aside class="landing-div"></aside>
+                <aside class="resting-div">
+                    <div><img src="{% static '/images/simon.svg' %}" alt="team1"><h3>Simon Olax</h3> <p>CEO</p> <p class="social-media"><span class="fa-brands fa-facebook-f"></span> <span class="fa-brands fa-instagram"></span><span class="fa-brands fa-twitter"></span><span class="fa-brands fa-linkedin-in"></span></p></div>
+                    <div><img src="{% static '/images/purple.svg' %}" alt="team1"> <h3>Purple Scott</h3><p>Product manager</p><p class="social-media"><span class="fa-brands fa-facebook-f"></span> <span class="fa-brands fa-instagram"></span><span class="fa-brands fa-twitter"></span><span class="fa-brands fa-linkedin-in"></span></p></div>
+                    <div><img src="{% static '/images/ben.svg' %}" alt="team1"> <h3>Ben Hack</h3><p>Developer</p><p class="social-media"><span class="fa-brands fa-facebook-f"></span> <span class="fa-brands fa-instagram"></span><span class="fa-brands fa-twitter"></span><span class="fa-brands fa-linkedin-in"></span></p></div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="our-clients">
+            <section class="clients-text">
+            <h1>Our reputed clients</h1>
+            <p>At Exccomp, we believe that customers
+                deserve the best services and we aim to 
+                satisfy their demands. </p>
+                <p><i class="fa-solid fa-circle-arrow-left"></i> <em class="fa-solid fa-circle-arrow-right"></em></p>
+            </section>
+        
+            <div class="clients-display">
+                <aside class="clients-landing-div"></aside>
+                <aside class="clients-resting-div">
+                    <img src="{% static '/images/flutterwave-bg.svg' %}" alt="client1"> 
+                    <img src="{% static '/images/UBA-bg.svg' %}" alt="client2">
+                    <img src="{% static '/images/quickteller-bg.svg' %}" alt="client3">
+                    <img src="{% static '/images/last.svg' %}" alt="client4">
+                </aside>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <section class="subscribe">
+            <p>Get latest deals and newsletters directly to your inbox.</p>
+            <div>
+                <label for="email">
+                    <span class="sr-only" hidden>Email</span>    
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                </label>
+                <button class="filled-bg-btn">Subscribe</button>
+            </div>
+        </section>
+
+        <section class="footer-main">
+            <div>
+                <img src="{% static '/images/Logo-footer.svg' %}" alt="logo" class="logo footer-logo">
+                <ul class="socials">
+                    <li>
+                        <span class="fa fa-brands fa-instagram" aria-hidden="true"></span>
+                        <span class="sr-only">Instagram</span>
+                    </li>
+                    <li>
+                        <span class="fa fa-brands fa-facebook-f" aria-hidden="true"></span>
+                        <span class="sr-only">Facebook</span>
+                    </li>
+                    <li>
+                        <span class="fa fa-solid fa-envelope" aria-hidden="true"></span>
+                        <span class="sr-only">Email</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-flex">
+                <div class="footer-item">
+                    <h4>Product</h4>
+                    <ul>
+                        <li>Insights & Actions</li>
+                        <li>Integrations</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Policy</h4>
+                    <ul>
+                        <li>Terms of Use</li>
+                        <li>Privacy Policy</li>
+                        <li>Support Level Policy</li>
+                        <li>Service Level Agreement</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>About</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Customers</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Contact us</li>
+                        <li>Help Center</li>
+                        <li>Conversational Feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-copyright">
+            <p>&copy; 2022 Zuri. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    
